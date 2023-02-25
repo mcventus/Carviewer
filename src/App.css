@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+  color: black;
+}
+.App-link {
+  color: #61dafb;
+}
+.container{
+  width: 90%;
+  margin-inline: auto;
+  max-width: 1920px;
+}
