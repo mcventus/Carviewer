@@ -4,7 +4,7 @@ import logo32 from '../../logo/logo32_camel.png'
 
 export default function Nav(){
     return(
-        <div className='nav-container'>
+        <div className='container'>
             <nav>
                  <img src={logo32} alt="Logo"/>
                 <ul>

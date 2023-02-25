@@ -4,7 +4,9 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex: wrap;
-    background-color: #282c34;
+    top: 0;
+    left: 0;
+    background-color: #343328;
   }
 .logo {
    
