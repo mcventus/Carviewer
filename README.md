@@ -67,7 +67,7 @@ Using can viwer you can search for the car you are interested in and view the ca
 
 ## Code Snippet
 
-Smooth implementation of functionalities and calling them at runtime
+Smooth implementation of functions and calling them at runtime
 
 
 ```
