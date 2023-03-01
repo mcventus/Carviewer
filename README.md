@@ -49,7 +49,7 @@ Using can viwer you can search for the car you are interested in and view the ca
 |---|---| ---|
 |Feb 24| Brainstorming / Writing Pseudocodes / Identifying All Constraints | Yes
 |Feb 24-25| Setting up project components/ Testing if each components are functioning with out error | Yes
-|Feb 26-27| Implementing major functions and use react cross-component communicators or built in functions to save application data states and control life cycle of project components  | No
+|Feb 26-27| Implementing major functions and use react cross-component communicators or built in functions to save application data states and control life cycle of project components  | yes
 |Feb 28| Finising up the application, testing and deploying  | No
 
 
@@ -87,7 +87,7 @@ Smooth implementation of functionalities and calling them at runtime
 
 ## Surge Deployment Link
 
-- Home Page and others comming soon ...
+- Major components such as Home, About, Login, Logout and other aplication specific components added.
 
 
 ## Change Log

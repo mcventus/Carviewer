@@ -15,7 +15,7 @@
 }
 .card-detail:hover{
   background-color: rgb(207, 207, 207);
-  color: rgb(64, 64, 64);
+  /* color: rgb(64, 64, 64); */
   /* background: transparent; */
   border-color: whitesmoke;
   transform: translateY(-1rem);  

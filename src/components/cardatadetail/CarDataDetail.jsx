@@ -55,10 +55,10 @@ export default function CarDataDetail() {
         <div className="card-detail">
           <div id="row">
           </div>
-          {'ID '}{car.id} {" "}<br />
-          {'MAKE '}{car.make} {" "}<br/>
+          {'ID '}{car.id}<br />
+          {'MAKE '}{car.make}<br/>
           {'YEAR '}{car.year}<br />
-          {'MODEL '}{car.model}{" "} <br />
+          {'MODEL '}{car.model}<br />
           {'TYPE '}{car.type}
         </div>
         <button id="back">
