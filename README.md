@@ -71,20 +71,41 @@ Smooth implementation of functionalities and calling them at runtime
 
 
 ```
-
   const datanum = useContext(CarDataContext);
   const [searchText, setSearchText] = useState("");
   const navigate = useNavigate();
 
   const setOptionsParam = () => {
-   
     Object.entries(datanum.options).map(([key, value]) => {
       if (key === "params") {
         Object.entries(datanum.options.params).map(([key, value]) => {
-          if (key === "make") {
-            value = searchText;
-            datanum.options.params.make = value;
-            datanum.setOptions({ ...datanum.options });
+          // API works only with make to get data so no search option is
+          // was possible however it could have been done this way
+          switch (key) {
+            case "make":
+              value = searchText;
+              datanum.options.params.make = value;
+              datanum.setOptions({ ...datanum.options });
+              break;
+            case "model":
+              value = searchText;
+              datanum.options.params.model = value;
+              datanum.setOptions({ ...datanum.options });
+              break;
+            case "type":
+              value = searchText;
+              datanum.options.params.type = value;
+              datanum.setOptions({ ...datanum.options });
+              break;
+            case "id":
+              value = searchText;
+              datanum.options.params.id = value;
+              datanum.setOptions({ ...datanum.options });
+              break;
+            case "year":
+              value = searchText;
+              datanum.options.params.year = value;
+              datanum.setOptions({ ...datanum.options });
           }
         });
       }
@@ -102,7 +123,7 @@ Smooth implementation of functionalities and calling them at runtime
 - ... no changes yet ...
 
 ## NOTICE 
-- I will use external Libraries, APIS, and other resources to accomplish this.
+- External Libraries, APIS, and other resources used to complete this react project.
 
 ## Report Format Example
 - Taken from the Teacher's repository. 

@@ -11,14 +11,36 @@ export default function MyCarViewer() {
   const navigate = useNavigate();
 
   const setOptionsParam = () => {
-   
     Object.entries(datanum.options).map(([key, value]) => {
       if (key === "params") {
         Object.entries(datanum.options.params).map(([key, value]) => {
-          if (key === "make") {
-            value = searchText;
-            datanum.options.params.make = value;
-            datanum.setOptions({ ...datanum.options });
+          // API works only with make to get data so no search option is
+          // was possible
+          switch (key) {
+            case "make":
+              value = searchText;
+              datanum.options.params.make = value;
+              datanum.setOptions({ ...datanum.options });
+              break;
+            case "model":
+              value = searchText;
+              datanum.options.params.model = value;
+              datanum.setOptions({ ...datanum.options });
+              break;
+            case "type":
+              value = searchText;
+              datanum.options.params.type = value;
+              datanum.setOptions({ ...datanum.options });
+              break;
+            case "id":
+              value = searchText;
+              datanum.options.params.id = value;
+              datanum.setOptions({ ...datanum.options });
+              break;
+            case "year":
+              value = searchText;
+              datanum.options.params.year = value;
+              datanum.setOptions({ ...datanum.options });
           }
         });
       }
@@ -29,7 +51,8 @@ export default function MyCarViewer() {
     e.preventDefault();
     return (
       <div className="main-home-container">
-        {datanum.options.params.make !== ""
+        {datanum.options.params.make !== "" ||
+        datanum.options.params.model !== ""
           ? navigate("/cardata")
           : navigate("/nodata")}
       </div>
