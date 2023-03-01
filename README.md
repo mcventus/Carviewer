@@ -72,16 +72,24 @@ Smooth implementation of functionalities and calling them at runtime
 
 ```
 
-     const getCarData = async () => {
-            axios.request(options).then(function (response) {
-                console.log("SUCCESS: "+response);
-                setCarData(response)
-            }).catch(function (error) {
-                console.error(error);
-            });
-        }
-        getCarData()
-    }, [])
+  const datanum = useContext(CarDataContext);
+  const [searchText, setSearchText] = useState("");
+  const navigate = useNavigate();
+
+  const setOptionsParam = () => {
+   
+    Object.entries(datanum.options).map(([key, value]) => {
+      if (key === "params") {
+        Object.entries(datanum.options.params).map(([key, value]) => {
+          if (key === "make") {
+            value = searchText;
+            datanum.options.params.make = value;
+            datanum.setOptions({ ...datanum.options });
+          }
+        });
+      }
+    });
+  };
 
 ```
 
