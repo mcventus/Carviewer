@@ -80,13 +80,11 @@
       "smallImg": "imgs/home/img_5_500x333.png"
     }
    
-  ]
-,
-  "CarDataDetail": [
+  ],"CarData": [
     {
-      "title": "Image is Problem",
-      "largeImg": "imgs/cardatadetail/img_1000x667_7.png",
-      "smallImg": "imgs/cardatadetail/img_500x333_7.png"
+      "title": "Happy He Is",
+      "largeImg": "imgs/cardata/img_1000x667_7.png",
+      "smallImg": "imgs/cardata/img_500x333_7.png"
     }
    
   ]

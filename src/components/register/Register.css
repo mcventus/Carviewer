@@ -1,28 +1,24 @@
-#form__container,
-.login-form,
-.register-form {
+#form__container, .login-form, .register-form {
   display: flex;
   flex-direction: column;
   width: 50%;
   margin: 0 auto;
   padding: 2rem;
 }
-#form__container {
+#form__container{
   border-radius: 0.7rem;
-  background-image: linear-gradient(79deg, #d7d7d7, #777777 48%, #c7c7c7);
-  box-shadow: rgba(189, 189, 189, 0.56) 0px 22px 70px 4px;
+  background-image: linear-gradient(79deg, #d7d7d7, #c7c7c7 48%, #c7c7c7);
+  box-shadow: rgba(253, 253, 253, 0.56) 0px 22px 70px 4px;
   /* border: 1px dotted rgb(253, 240, 169); */
 }
-#form__container,
-.login-form,
-.register-form h2 label {
-  color: white;
+#form__container, .login-form, .register-form h2 label{
+ color: white;
 }
-input {
+input{
   font-size: 12px;
   border: 1px solid rgb(102, 102, 102);
 }
-label {
+label{
   font-size: 12px;
 }
 @media screen and (max-width: 600px) {
@@ -32,10 +28,10 @@ label {
     border-radius: 0.7rem;
     margin: 0.5rem;
   }
-  input {
+  input{
     font-size: 12px;
   }
-  label {
+  label{
     font-size: 12px;
   }
 }
@@ -46,10 +42,10 @@ label {
     border-radius: 0.7rem;
     margin: 0.5rem;
   }
-  input {
+  input{
     font-size: 10px;
   }
-  label {
+  label{
     font-size: 10px;
   }
 }

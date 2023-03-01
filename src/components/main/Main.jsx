@@ -76,7 +76,7 @@ export default function Main() {
             <Route path="/cardata" element={<CarData />} />
             <Route
               path="/cardata/:id"
-              element={<CarDataDetail cardataimg={renderPage.CarDataDetail} />}
+              element={<CarDataDetail />}
             />
             <Route path="/nodata" element={<NoData />} />
           </Routes>

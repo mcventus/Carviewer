@@ -4,11 +4,11 @@ import axios from "axios";
 import "./CarData.css";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import CarDataDetail from "../cardatadetail/CarDataDetail";
-import carData from "./mock_data.json";
+import carin from "./mock_data.json";
 import ShowCar from "./ShowCar";
 
 export default function CarData(props) {
-  //const [carData, setCarData] = useState([]);
+  const [carData, setCarData] = useState([]);
   const [showDetail, setShowDetail] = useState(false);
   //const [carImg, setCarImg] = useState({})
 
@@ -20,21 +20,17 @@ export default function CarData(props) {
     navigate(path, { replace: false });
   };
 
-  //const {options, setOptions} = useContext(CarDataContext.Provider)
   const datanumcar = useContext(CarDataContext);
 
   useEffect(() => {
-    //setCarData(carData)
-   
-    // const getCarData = async () => {
-    //   axios.request(datanumcar.options).then(function (response) {
-    //    
-    //     setCarData(response.data)
-    //   }).catch(function (error) {
-    //     console.error(error);
-    //   });
-    // };
-    // getCarData();
+    const getCarData = async () => {
+      axios.request(datanumcar.options).then(function (response) {
+        setCarData(response.data)
+      }).catch(function (error) {
+        console.error(error);
+      });
+    };
+    getCarData();
   }, []);
 
   if (carData && !showDetail) {

@@ -32,8 +32,8 @@ const Home = (props) => {
                   >
                     <ShowImage
                       title={car.title}
-                      largeImg={car.large}
-                      smallImg={car.small}
+                      largeImg={car.largeImg}
+                      smallImg={car.smallImg}
                     />
                   </div>
                 ))

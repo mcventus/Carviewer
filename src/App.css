@@ -49,14 +49,9 @@ button:hover {
   color: white;
   text-decoration: underline;
 }
-.link-btn {
-  background: none;
-  color: yellow;
-  text-decoration: underline;
-}
 .link-btn:hover {
   background: none;
-  color: rgb(240, 230, 230);
+  color: rgb(247, 247, 247);
   text-decoration: underline;
 }
 #row {

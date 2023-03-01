@@ -9,7 +9,8 @@
   margin-top: 70px;
 }
 #searchText {
-  border: 1px solid lightgreen;
+  border: 1px solid rgb(232, 232, 232);
+  box-shadow: rgba(189, 189, 189, 0.4) 0px 22px 70px 4px;
 }
 @media screen and (min-width: 600px) {
   .main-form-container {

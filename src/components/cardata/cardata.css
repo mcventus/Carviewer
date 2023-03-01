@@ -58,8 +58,8 @@
   color: white;
 }
 .cardata-card:hover {
-  background-color: rgb(210, 210, 210);
-  color: rgb(55, 55, 55);
+  background-color: rgb(185, 185, 185);
+  /* color: rgb(55, 55, 55); */
   border: none;
   transform: translateY(-1rem);
 }
@@ -91,17 +91,21 @@ input {
   border: none;
   border-radius: 10px;
 }
+#back{
+  padding: 0;
+}
 #link-btn {
-  border: 1px solid rgb(176, 176, 176);
-  background-color: white;
+  border: none;
+  /* background-color: rgb(99, 150, 253); */
+  background-image: linear-gradient(to right, rgb(99, 150, 253), rgba(255,0,0,1));
   padding: 20px;
   border-radius: 0.7rem;
   cursor: pointer;
-  color: #54db39;
+  color: #ffffff;
 }
 #link-btn:hover {
   border: none;
-  background: rgb(176, 176, 176);
+  /* background: rgb(66, 129, 255); */
+  background-image: linear-gradient(to right,rgba(255,0,0,1), rgb(99, 150, 253));
   color: rgb(240, 230, 230);
-  text-decoration: underline;
 }

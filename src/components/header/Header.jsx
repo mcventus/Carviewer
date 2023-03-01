@@ -1,11 +1,11 @@
 import React from "react";
 import './Header.css'
 
-const Header = (props) => {
+const Header = () => {
   return (
     <header id="header">
       <div className="header__top">
-        <div className="header_darker">
+        <div className="header__darker">
           <div className="container">
             <div className="row">
               <div className="col-md-8 col-md-offset-2 header__top__text">
