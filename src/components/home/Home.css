@@ -1,45 +1,167 @@
+.container {
+  width: 100%;
+  margin: 0 3px;
+}
+.title {
+  font-family: "Codystar", cursive;
+  color: rgb(253, 240, 169);
+  font-weight: bold;
+  font-size: 4vh;
+  border: 6px dotted rgb(253, 240, 169);
+  border-radius: 15px;
+  padding: 0px 25px 0px 25px;
+  background-color: rgb(187, 0, 0);
+}
+/* home */
+#home {
+  text-align: center;
+  padding: 150px 0;
+}
+.home-item {
+  margin: 1px -15px 0 -14px;
+  padding: 0;
+  border: 0.25rem solid rgb(250, 250, 250);
+}
+.home-item .hover-bg {
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  border: 0.25rem solid transparent;
+}
+.hover-bg .hover-text {
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
+  background: linear-gradient(
+    to right,
+    rgba(133, 255, 99, 0.8) 0%,
+    rgba(251, 119, 92, 0.8) 100%
+  );
+  padding: 30% 0 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.hover-bg .hover-text > h4 {
+  opacity: 0;
+  color: #fff;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  transition: all 0.3s;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.hover-bg:hover .hover-text > h4 {
+  opacity: 1;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+.hover-bg:hover .hover-text {
+  opacity: 1;
+}
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.section-title {
+  margin-bottom: 70px;
+}
+.section-title h2 {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+.section-title h2::after {
+  position: absolute;
+  content: "";
+  background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  height: 4px;
+  width: 60px;
+  bottom: 0;
+  margin-left: -30px;
+  left: 50%;
+}
+.section-title p {
+  font-size: 18px;
+}
+.section-title h2::after {
+  position: absolute;
+  content: "";
+  background: rgba(255, 255, 255, 0.3);
+  height: 4px;
+  width: 60px;
+  bottom: 0;
+  margin-left: -30px;
+  left: 50%;
+}
+.section-title {
+  margin-bottom: 40px;
+}
+.section-title p {
+  font-size: 16px;
+}
+.section-title h2::after {
+  position: absolute;
+  content: "";
+  background: rgba(255, 255, 255, 0.3);
+  height: 4px;
+  width: 60px;
+  bottom: 0;
+  left: 30px;
+}
 
-.auth-form-container, .login-form, .register-form {
-    display: flex;
-    flex-direction: column;
+/*image*/
+img {
+  vertical-align: middle;
+}
+.flex-img,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.img-rounded {
+  border-radius: 6px;
+}
+.img-thumbnail {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.img-circle {
+  border-radius: 50%;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
   }
-  
-  @media screen and (min-width: 600px) {
-    .auth-form-container {
-      padding: 5rem;
-      /* border: 1px solid white; */
-      border-radius: 10px;
-      margin: 0.5rem;
-    }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
   }
-  
-  label {
-    text-align: left;
-    padding: 0.25rem 0;
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
   }
-  
-  input {
-    margin: 0.5rem 0;
-    padding: 1rem;
-    border: none;
-    border-radius: 10px;
-    width: 50%;
-    text-align: center;
-    margin: 0 auto;
-    border: 1px solid blue;
-  }
-  
-  button {
-    border: none;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    color: #7439db;
-  }
-  
-  .link-btn {
-    background: none;
-    color: white;
-    text-decoration: underline;
-  }
+}

@@ -1,0 +1,845 @@
+[
+  {
+    "id": 12127,
+    "year": 2003,
+    "make": "Toyota",
+    "model": "Prius",
+    "type": "Sedan"
+  },
+  {
+    "id": 12144,
+    "year": 1997,
+    "make": "Toyota",
+    "model": "RAV4",
+    "type": "SUV"
+  },
+  {
+    "id": 12189,
+    "year": 2011,
+    "make": "Toyota",
+    "model": "Venza",
+    "type": "Wagon"
+  },
+  {
+    "id": 12198,
+    "year": 2008,
+    "make": "Toyota",
+    "model": "Avalon",
+    "type": "Sedan"
+  },
+  {
+    "id": 12201,
+    "year": 2004,
+    "make": "Toyota",
+    "model": "Prius",
+    "type": "Sedan"
+  },
+  {
+    "id": 12212,
+    "year": 2010,
+    "make": "Toyota",
+    "model": "Land Cruiser",
+    "type": "SUV"
+  },
+  {
+    "id": 12230,
+    "year": 2012,
+    "make": "Toyota",
+    "model": "Tundra Double Cab",
+    "type": "Pickup"
+  },
+  {
+    "id": 12234,
+    "year": 2011,
+    "make": "Toyota",
+    "model": "Sequoia",
+    "type": "SUV"
+  },
+  {
+    "id": 12269,
+    "year": 2013,
+    "make": "Toyota",
+    "model": "Tacoma Access Cab",
+    "type": "Pickup"
+  },
+  {
+    "id": 12273,
+    "year": 2010,
+    "make": "Toyota",
+    "model": "RAV4",
+    "type": "SUV"
+  },
+  {
+    "id": 12303,
+    "year": 1998,
+    "make": "Toyota",
+    "model": "RAV4",
+    "type": "SUV"
+  },
+  {
+    "id": 12304,
+    "year": 2000,
+    "make": "Toyota",
+    "model": "4Runner",
+    "type": "SUV"
+  },
+  {
+    "id": 12309,
+    "year": 2018,
+    "make": "Toyota",
+    "model": "Mirai",
+    "type": "Sedan"
+  },
+  {
+    "id": 12320,
+    "year": 2013,
+    "make": "Toyota",
+    "model": "Yaris",
+    "type": "Hatchback"
+  },
+  {
+    "id": 12351,
+    "year": 2011,
+    "make": "Toyota",
+    "model": "Tundra Double Cab",
+    "type": "Pickup"
+  },
+  {
+    "id": 12352,
+    "year": 2019,
+    "make": "Toyota",
+    "model": "RAV4",
+    "type": "SUV"
+  },
+  {
+    "id": 12353,
+    "year": 2012,
+    "make": "Toyota",
+    "model": "Prius v",
+    "type": "Wagon"
+  },
+  {
+    "id": 12360,
+    "year": 2007,
+    "make": "Toyota",
+    "model": "Tundra Double Cab",
+    "type": "Pickup"
+  },
+  {
+    "id": 12386,
+    "year": 2007,
+    "make": "Toyota",
+    "model": "Tacoma Regular Cab",
+    "type": "Pickup"
+  },
+  {
+    "id": 12407,
+    "year": 1997,
+    "make": "Toyota",
+    "model": "Corolla",
+    "type": "Sedan"
+  },
+  {
+    "id": 12415,
+    "year": 2020,
+    "make": "Toyota",
+    "model": "Corolla Hatchback",
+    "type": "Hatchback"
+  },
+  {
+    "id": 12428,
+    "year": 2017,
+    "make": "Toyota",
+    "model": "Camry Hybrid",
+    "type": "Sedan"
+  },
+  {
+    "id": 12429,
+    "year": 2002,
+    "make": "Toyota",
+    "model": "Tacoma Xtracab",
+    "type": "Pickup"
+  },
+  {
+    "id": 12431,
+    "year": 2014,
+    "make": "Toyota",
+    "model": "Prius Plug-in Hybrid",
+    "type": "Hatchback"
+  },
+  {
+    "id": 12434,
+    "year": 2012,
+    "make": "Toyota",
+    "model": "Tacoma Regular Cab",
+    "type": "Pickup"
+  },
+  {
+    "id": 12475,
+    "year": 2000,
+    "make": "Toyota",
+    "model": "Sienna",
+    "type": "Van/Minivan"
+  },
+  {
+    "id": 12478,
+    "year": 2019,
+    "make": "Toyota",
+    "model": "Avalon Hybrid",
+    "type": "Sedan"
+  },
+  {
+    "id": 12482,
+    "year": 1994,
+    "make": "Toyota",
+    "model": "Camry",
+    "type": "Sedan, Coupe, Wagon"
+  },
+  {
+    "id": 12491,
+    "year": 2019,
+    "make": "Toyota",
+    "model": "Prius",
+    "type": "Hatchback"
+  },
+  {
+    "id": 12516,
+    "year": 2006,
+    "make": "Toyota",
+    "model": "Camry",
+    "type": "Sedan"
+  },
+    {
+      "id": 13346,
+      "year": 2004,
+      "make": "Mercedes-Benz",
+      "model": "E-Class",
+      "type": "Sedan, Wagon"
+    },
+    {
+      "id": 13354,
+      "year": 2014,
+      "make": "Mercedes-Benz",
+      "model": "GLK-Class",
+      "type": "SUV"
+    },
+    {
+      "id": 13418,
+      "year": 2001,
+      "make": "Mercedes-Benz",
+      "model": "E-Class",
+      "type": "Sedan, Wagon"
+    },
+    {
+      "id": 13500,
+      "year": 2019,
+      "make": "Mercedes-Benz",
+      "model": "A-Class",
+      "type": "Sedan"
+    },
+    {
+      "id": 13563,
+      "year": 1997,
+      "make": "Mercedes-Benz",
+      "model": "E-Class",
+      "type": "Sedan"
+    },
+    {
+      "id": 13605,
+      "year": 2011,
+      "make": "Mercedes-Benz",
+      "model": "SLS-Class",
+      "type": "Coupe"
+    },
+    {
+      "id": 13624,
+      "year": 2019,
+      "make": "Mercedes-Benz",
+      "model": "Mercedes-AMG G-Class",
+      "type": "SUV"
+    },
+    {
+      "id": 13639,
+      "year": 2013,
+      "make": "Mercedes-Benz",
+      "model": "SLK-Class",
+      "type": "Convertible"
+    },
+    {
+      "id": 13704,
+      "year": 2003,
+      "make": "Mercedes-Benz",
+      "model": "C-Class",
+      "type": "Sedan, Coupe, Wagon"
+    },
+    {
+      "id": 13732,
+      "year": 1999,
+      "make": "Mercedes-Benz",
+      "model": "M-Class",
+      "type": "SUV"
+    },
+    {
+      "id": 13746,
+      "year": 2007,
+      "make": "Mercedes-Benz",
+      "model": "C-Class",
+      "type": "Sedan"
+    },
+    {
+      "id": 13762,
+      "year": 2012,
+      "make": "Mercedes-Benz",
+      "model": "GL-Class",
+      "type": "SUV"
+    },
+    {
+      "id": 13811,
+      "year": 2001,
+      "make": "Mercedes-Benz",
+      "model": "SL-Class",
+      "type": "Convertible"
+    },
+    {
+      "id": 13904,
+      "year": 2012,
+      "make": "Mercedes-Benz",
+      "model": "GLK-Class",
+      "type": "SUV"
+    },
+    {
+      "id": 13913,
+      "year": 2013,
+      "make": "Mercedes-Benz",
+      "model": "Sprinter 2500 Crew",
+      "type": "Van/Minivan"
+    },
+    {
+      "id": 13920,
+      "year": 2011,
+      "make": "Mercedes-Benz",
+      "model": "C-Class",
+      "type": "Sedan"
+    },
+    {
+      "id": 13944,
+      "year": 2017,
+      "make": "Mercedes-Benz",
+      "model": "GLC",
+      "type": "SUV"
+    },
+    {
+      "id": 14091,
+      "year": 2018,
+      "make": "Mercedes-Benz",
+      "model": "GLS",
+      "type": "SUV"
+    },
+    {
+      "id": 14126,
+      "year": 2016,
+      "make": "Mercedes-Benz",
+      "model": "Mercedes-AMG SLK",
+      "type": "Convertible"
+    },
+    {
+      "id": 14141,
+      "year": 2014,
+      "make": "Mercedes-Benz",
+      "model": "C-Class",
+      "type": "Sedan, Coupe"
+    },
+    {
+      "id": 14171,
+      "year": 2003,
+      "make": "Mercedes-Benz",
+      "model": "SL-Class",
+      "type": "Convertible"
+    },
+    {
+      "id": 14175,
+      "year": 2008,
+      "make": "Mercedes-Benz",
+      "model": "SLK-Class",
+      "type": "Convertible"
+    },
+    {
+      "id": 14194,
+      "year": 2018,
+      "make": "Mercedes-Benz",
+      "model": "Mercedes-AMG GLC Coupe",
+      "type": "SUV"
+    },
+    {
+      "id": 14195,
+      "year": 2013,
+      "make": "Mercedes-Benz",
+      "model": "CL-Class",
+      "type": "Coupe"
+    },
+    {
+      "id": 14206,
+      "year": 2015,
+      "make": "Mercedes-Benz",
+      "model": "C-Class",
+      "type": "Sedan, Coupe"
+    },
+    {
+      "id": 14217,
+      "year": 2001,
+      "make": "Mercedes-Benz",
+      "model": "CL-Class",
+      "type": "Coupe"
+    },
+    {
+      "id": 14230,
+      "year": 1993,
+      "make": "Mercedes-Benz",
+      "model": "600 SEL",
+      "type": "Sedan"
+    },
+    {
+      "id": 14232,
+      "year": 2008,
+      "make": "Mercedes-Benz",
+      "model": "G-Class",
+      "type": "SUV"
+    },
+    {
+      "id": 14270,
+      "year": 2015,
+      "make": "Mercedes-Benz",
+      "model": "E-Class",
+      "type": "Convertible, Wagon, Coupe, Sedan"
+    },
+    {
+      "id": 14278,
+      "year": 1997,
+      "make": "Mercedes-Benz",
+      "model": "C-Class",
+      "type": "Sedan"
+    },
+      {
+        "id": 10987,
+        "year": 2004,
+        "make": "Chevrolet",
+        "model": "Silverado 3500 Regular Cab",
+        "type": "Pickup"
+      },
+      {
+        "id": 10998,
+        "year": 2009,
+        "make": "Chevrolet",
+        "model": "Avalanche",
+        "type": "SUV"
+      },
+      {
+        "id": 11008,
+        "year": 2009,
+        "make": "Chevrolet",
+        "model": "Colorado Regular Cab",
+        "type": "Pickup"
+      },
+      {
+        "id": 11017,
+        "year": 1993,
+        "make": "Chevrolet",
+        "model": "G-Series G30",
+        "type": "Van/Minivan"
+      },
+      {
+        "id": 11028,
+        "year": 1997,
+        "make": "Chevrolet",
+        "model": "3500 Regular Cab",
+        "type": "Pickup"
+      },
+      {
+        "id": 11036,
+        "year": 2017,
+        "make": "Chevrolet",
+        "model": "Silverado 2500 HD Double Cab",
+        "type": "Pickup"
+      },
+      {
+        "id": 11043,
+        "year": 2015,
+        "make": "Chevrolet",
+        "model": "Silverado 3500 HD Double Cab",
+        "type": "Pickup"
+      },
+      {
+        "id": 11058,
+        "year": 2000,
+        "make": "Chevrolet",
+        "model": "Express 2500 Passenger",
+        "type": "Van/Minivan"
+      },
+      {
+        "id": 11066,
+        "year": 1993,
+        "make": "Chevrolet",
+        "model": "Suburban 2500",
+        "type": "SUV"
+      },
+      {
+        "id": 11080,
+        "year": 2019,
+        "make": "Chevrolet",
+        "model": "Malibu",
+        "type": "Sedan"
+      },
+      {
+        "id": 11089,
+        "year": 2006,
+        "make": "Chevrolet",
+        "model": "Silverado 2500 HD Extended Cab",
+        "type": "Pickup"
+      },
+      {
+        "id": 11115,
+        "year": 2020,
+        "make": "Chevrolet",
+        "model": "Silverado 2500 HD Crew Cab",
+        "type": "Pickup"
+      },
+      {
+        "id": 11117,
+        "year": 2020,
+        "make": "Chevrolet",
+        "model": "Corvette",
+        "type": "Coupe, Convertible"
+      },
+      {
+        "id": 11122,
+        "year": 2016,
+        "make": "Chevrolet",
+        "model": "Express 3500 Passenger",
+        "type": "Van/Minivan"
+      },
+      {
+        "id": 11125,
+        "year": 2007,
+        "make": "Chevrolet",
+        "model": "Silverado 3500 HD Regular Cab",
+        "type": "Pickup"
+      },
+      {
+        "id": 11126,
+        "year": 1998,
+        "make": "Chevrolet",
+        "model": "Corvette",
+        "type": "Convertible, Hatchback"
+      },
+      {
+        "id": 11129,
+        "year": 2015,
+        "make": "Chevrolet",
+        "model": "Colorado Crew Cab",
+        "type": "Pickup"
+      },
+      {
+        "id": 11134,
+        "year": 2009,
+        "make": "Chevrolet",
+        "model": "Malibu",
+        "type": "Sedan"
+      },
+      {
+        "id": 11135,
+        "year": 1998,
+        "make": "Chevrolet",
+        "model": "Prizm",
+        "type": "Sedan"
+      },
+      {
+        "id": 11144,
+        "year": 2008,
+        "make": "Chevrolet",
+        "model": "Impala",
+        "type": "Sedan"
+      },
+      {
+        "id": 11150,
+        "year": 2003,
+        "make": "Chevrolet",
+        "model": "SSR",
+        "type": "Pickup"
+      },
+      {
+        "id": 11156,
+        "year": 1999,
+        "make": "Chevrolet",
+        "model": "1500 Extended Cab",
+        "type": "Pickup"
+      },
+      {
+        "id": 11157,
+        "year": 2014,
+        "make": "Chevrolet",
+        "model": "Suburban 1500",
+        "type": "SUV"
+      },
+      {
+        "id": 11158,
+        "year": 1999,
+        "make": "Chevrolet",
+        "model": "Express 1500 Cargo",
+        "type": "Van/Minivan"
+      },
+      {
+        "id": 11159,
+        "year": 2014,
+        "make": "Chevrolet",
+        "model": "Corvette",
+        "type": "Coupe, Convertible"
+      },
+      {
+        "id": 11161,
+        "year": 2004,
+        "make": "Chevrolet",
+        "model": "Astro Passenger",
+        "type": "Van/Minivan"
+      },
+      {
+        "id": 11171,
+        "year": 2006,
+        "make": "Chevrolet",
+        "model": "TrailBlazer",
+        "type": "SUV"
+      },
+      {
+        "id": 11181,
+        "year": 2020,
+        "make": "Chevrolet",
+        "model": "Malibu",
+        "type": "Sedan"
+      },
+      {
+        "id": 11184,
+        "year": 2013,
+        "make": "Chevrolet",
+        "model": "Express 3500 Passenger",
+        "type": "Van/Minivan"
+      },
+      {
+        "id": 11187,
+        "year": 1996,
+        "make": "Chevrolet",
+        "model": "1500 Extended Cab",
+        "type": "Pickup"
+      },
+        {
+          "id": 11421,
+          "year": 1997,
+          "make": "Ford",
+          "model": "F350 Regular Cab",
+          "type": "Pickup"
+        },
+        {
+          "id": 11456,
+          "year": 2002,
+          "make": "Ford",
+          "model": "Excursion",
+          "type": "SUV"
+        },
+        {
+          "id": 11464,
+          "year": 1997,
+          "make": "Ford",
+          "model": "Probe",
+          "type": "Hatchback"
+        },
+        {
+          "id": 11497,
+          "year": 2015,
+          "make": "Ford",
+          "model": "Explorer",
+          "type": "SUV"
+        },
+        {
+          "id": 11500,
+          "year": 2011,
+          "make": "Ford",
+          "model": "Ranger Super Cab",
+          "type": "Pickup"
+        },
+        {
+          "id": 11504,
+          "year": 2016,
+          "make": "Ford",
+          "model": "Escape",
+          "type": "SUV"
+        },
+        {
+          "id": 11514,
+          "year": 2019,
+          "make": "Ford",
+          "model": "Transit 350 Wagon",
+          "type": "Van/Minivan"
+        },
+        {
+          "id": 11518,
+          "year": 2001,
+          "make": "Ford",
+          "model": "F350 Super Duty Super Cab",
+          "type": "Pickup"
+        },
+        {
+          "id": 11527,
+          "year": 2018,
+          "make": "Ford",
+          "model": "Mustang",
+          "type": "Coupe, Convertible"
+        },
+        {
+          "id": 11549,
+          "year": 2007,
+          "make": "Ford",
+          "model": "E350 Super Duty Cargo",
+          "type": "Van/Minivan"
+        },
+        {
+          "id": 11559,
+          "year": 2010,
+          "make": "Ford",
+          "model": "F250 Super Duty Regular Cab",
+          "type": "Pickup"
+        },
+        {
+          "id": 11591,
+          "year": 2018,
+          "make": "Ford",
+          "model": "Transit 250 Van",
+          "type": "Van/Minivan"
+        },
+        {
+          "id": 11592,
+          "year": 2013,
+          "make": "Ford",
+          "model": "Mustang",
+          "type": "Coupe, Convertible"
+        },
+        {
+          "id": 11599,
+          "year": 2004,
+          "make": "Ford",
+          "model": "F250 Super Duty Regular Cab",
+          "type": "Pickup"
+        },
+        {
+          "id": 11623,
+          "year": 2019,
+          "make": "Ford",
+          "model": "F150 SuperCrew Cab",
+          "type": "Pickup"
+        },
+        {
+          "id": 11627,
+          "year": 2006,
+          "make": "Ford",
+          "model": "F150 Super Cab",
+          "type": "Pickup"
+        },
+        {
+          "id": 11650,
+          "year": 2005,
+          "make": "Ford",
+          "model": "F350 Super Duty Crew Cab",
+          "type": "Pickup"
+        },
+        {
+          "id": 11670,
+          "year": 1994,
+          "make": "Ford",
+          "model": "Ranger Super Cab",
+          "type": "Pickup"
+        },
+        {
+          "id": 11677,
+          "year": 2004,
+          "make": "Ford",
+          "model": "Explorer",
+          "type": "SUV"
+        },
+        {
+          "id": 11693,
+          "year": 2017,
+          "make": "Ford",
+          "model": "C-MAX Energi",
+          "type": "Wagon"
+        },
+        {
+          "id": 11713,
+          "year": 1993,
+          "make": "Ford",
+          "model": "Tempo",
+          "type": "Sedan, Coupe"
+        },
+        {
+          "id": 11717,
+          "year": 2011,
+          "make": "Ford",
+          "model": "E250 Cargo",
+          "type": "Van/Minivan"
+        },
+        {
+          "id": 11727,
+          "year": 2005,
+          "make": "Ford",
+          "model": "E350 Super Duty Passenger",
+          "type": "Van/Minivan"
+        },
+        {
+          "id": 11750,
+          "year": 2003,
+          "make": "Ford",
+          "model": "Excursion",
+          "type": "SUV"
+        },
+        {
+          "id": 11764,
+          "year": 2020,
+          "make": "Ford",
+          "model": "Escape",
+          "type": "SUV"
+        },
+        {
+          "id": 11782,
+          "year": 2015,
+          "make": "Ford",
+          "model": "Mustang",
+          "type": "Coupe, Convertible"
+        },
+        {
+          "id": 11790,
+          "year": 1995,
+          "make": "Ford",
+          "model": "Club Wagon",
+          "type": "Van/Minivan"
+        },
+        {
+          "id": 11794,
+          "year": 2010,
+          "make": "Ford",
+          "model": "Taurus",
+          "type": "Sedan"
+        },
+        {
+          "id": 11805,
+          "year": 2017,
+          "make": "Ford",
+          "model": "F250 Super Duty Super Cab",
+          "type": "Pickup"
+        },
+        {
+          "id": 11831,
+          "year": 2018,
+          "make": "Ford",
+          "model": "Fiesta",
+          "type": "Sedan, Hatchback"
+        }
+      
+    
+  
+]

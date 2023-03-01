@@ -1,0 +1,94 @@
+{
+  "About": {
+    "paragraph": " Use this website to search for cars all over the USA. What is more, the site will give detail information about the car of your selection.",
+    "paragraph_1": [
+      {
+        "title": "Chevrolet",
+        "paragraph": " The Chevrolet Division of General Motors markets an array of cars and trucks, ranging from the all-American Chevy Corvette and Chevy Camaro to the Chevrolet Silverado family of pickups and the Chevrolet Suburban SUV. While the company has largely abandoned the sedan market, they've moved strongly into the electric vehicle space with the Chevrolet Bolt EV and Chevrolet Bolt EUV. Chevy is one of America's largest vehicle brands."
+      },
+      {
+        "title": "Toyota & Lexus",
+        "paragraph": " Lexus is the luxury arm of Toyota. They sell an array of luxury vehicles ranging from the Lexus IS sedan to the comfortable and capable Lexus LX SUV. Their best-seller is the Lexus RX crossover. Lexus is a frequent winner of our Best Certified Pre-Owned Programs award."
+      },
+      {
+        "title": "Hyundai",
+        "paragraph": " The Hyundai Motor Group is part of Korea's massive Hyundai conglomerate, which makes everything from cars to ships. In America, Hyundai USA sells a wide array of cars and SUVs, plus the new-for-2022 Hyundai Santa Cruz pickup. They're rapidly developing the Ioniq sub-brand of electric vehicles, starting with the Ioniq 5 crossover. Many of the cars Hyundai sells are built in the United States."
+      },
+      {
+        "title": "Jeep",
+        "paragraph": " The Jeep brand is a part of Stellantis. Jeep was forged from the Willys-Overland Company following World War II as the military General Purpose vehicle moved into civilian life. Today, the original Jeep's heritage lives on as the iconic Jeep Wranger. Jeep currently markets an array of SUVs and the Jeep Gladiator pickup with outstanding off-road capability. For 2022, the automaker has resurrected the long-dormant Jeep Wagoneer name for a new range of large, luxury SUVs."
+      },
+      {
+        "title": "Ford",
+        "paragraph": " The Ford Motor Company is one of the largest automobile companies in the U.S. and is the builder of the most popular vehicle sold in the country, the Ford F-150 full-size pickup. Headquartered in Dearborn, Michigan, Ford builds and sells cars around the world. One of the longest-running American car brands, the Ford Motor Co. claimed early success selling the high-volume, low-cost Ford Model T."
+      },
+      {
+        "title": "Cadillac",
+        "paragraph": " One of America's premier luxury car brands, Cadillac, sells a pair of sporty sedans and an array of luxury crossovers and SUVs, including the powerful Cadillac Escalade, in the United States. The high-end General Motors brand will launch its first electric vehicle, the Cadillac Lyriq, in 2022. Cadillac was founded in 1902."
+      },
+      {
+        "title": "GMC",
+        "paragraph": " GMC is a division of General Motors that focuses on SUVs and pickups, most of which are mechanical clones of Chevrolet products. GMC sells an upscale sub-brand of products under the Denali name. It will be the automobile company that brings the Hummer name back to America next year, with the arrival of the 2022 GMC Hummer EV pickup and SUV."
+      },
+      {
+        "title": "Mercedes-Benz",
+        "paragraph": " Luxury carmaker Mercedes-Benz is part of Germany's Daimler AG. The company produces and sell cars throughout the world, building many of their SUVs in Alabama. In the U.S., Mercedes markets cars ranging from the entry-level Mercedes A-Class sedan to the opulent Mercedes S-Class, Mercedes GLS SUV and classic Mercedes SL Roadster."
+      },
+      {
+        "title": "Nissan",
+        "paragraph": " Nissan is part of the vast Renault-Nissan-Mitsubishi alliance. Based in Japan with American operations in Franklin, Tennessee, Nissan markets a variety of cars, SUVs, and trucks in the U.S. market. Models range from the low-cost Nissan Versa to the powerful Nissan Titan pickup. Returning for 2022 is a new generation of the company's Z car."
+      },
+      {
+        "title": "Chrysler",
+        "paragraph": "Chrysler is one of the car brands of Stellantis, which is a product of a merger between Fiat Chrysler Automobiles and Europe's PSA Group. Chrysler currently only markets three models, the Chrysler Pacifica and Chrysler Voyager minivans, and the aging Chrysler 300 sedan. The Chrysler Pacifica Hybrid is the only plug-in hybrid minivan you can currently buy."
+      },
+      {
+        "title": "Dodge",
+        "paragraph": "Dodge is the performance brand of the Stellantis conglomerate's U.S. operation. Once a full-line brand that included the now spun-off Ram pickup lineup, the Dodge brand now sells the Dodge Challenger sports coupe, the Dodge Charger sedan and the Dodge Durango SUV. The company, founded by brothers John and Horace Dodge, started building cars in 1914."
+      }
+    ]
+  },
+  "Home": [
+    {
+      "title": "Happy Family",
+      "largeImg": "imgs/home/img_1_1000x667.png",
+      "smallImg": "imgs/home/img_1_500x333.png"
+    },
+    {
+      "title": "Ride Family",
+      "largeImg": "imgs/home/img_2_1000x667.png",
+      "smallImg": "imgs/home/img_2_500x333.png"
+    },
+    {
+      "title": "Happy She Is",
+      "largeImg": "imgs/home/img_6_1000x667.png",
+      "smallImg": "imgs/home/img_6_500x333.png"
+    },
+    {
+      "title": "The Road Ahead",
+      "largeImg": "imgs/home/img_3_1000x667.png",
+      "smallImg": "imgs/home/img_3_500x333.png"
+    },
+    {
+      "title": "Enjoying",
+      "largeImg": "imgs/home/img_4_1000x667.png",
+      "smallImg": "imgs/home/img_4_500x333.png"
+    },
+    {
+      "title": "Happy He Is",
+      "largeImg": "imgs/home/img_5_1000x667.png",
+      "smallImg": "imgs/home/img_5_500x333.png"
+    }
+   
+  ]
+,
+  "CarDataDetail": [
+    {
+      "title": "Image is Problem",
+      "largeImg": "imgs/cardatadetail/img_1000x667_7.png",
+      "smallImg": "imgs/cardatadetail/img_500x333_7.png"
+    }
+   
+  ]
+  
+}

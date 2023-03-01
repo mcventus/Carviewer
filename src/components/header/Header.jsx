@@ -1,0 +1,24 @@
+import React from "react";
+import './Header.css'
+
+const Header = (props) => {
+  return (
+    <header id="header">
+      <div className="header__top">
+        <div className="header_darker">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-8 col-md-offset-2 header__top__text">
+                <h1>
+                    CarViewer
+                </h1>
+                <p>Use this website to search for cars all over the USA. What is more, the site will give detail information about the car of your selection.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  );
+};
+export default Header

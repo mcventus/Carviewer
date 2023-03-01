@@ -1,0 +1,49 @@
+.main-home-container,
+.home-form {
+  display: flex;
+  flex-direction: column;
+}
+.home-form {
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 70px;
+}
+#searchText {
+  border: 1px solid lightgreen;
+}
+@media screen and (min-width: 600px) {
+  .main-form-container {
+    padding: 5rem;
+    /* border: 1px solid white; */
+    border-radius: 10px;
+    margin: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 350px) {
+  .home-form input {
+    font-size: 10px;
+  }
+}
+
+label {
+  text-align: left;
+  padding: 0.25rem 0;
+}
+
+input {
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  border: 1px solid blue;
+}
+
+.link-btn {
+  background: none;
+  color: white;
+  text-decoration: underline;
+}
