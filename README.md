@@ -79,8 +79,6 @@ Smooth implementation of functions and calling them at runtime
     Object.entries(datanum.options).map(([key, value]) => {
       if (key === "params") {
         Object.entries(datanum.options.params).map(([key, value]) => {
-          // API works only with make to get data so no search option is
-          // was possible however it could have been done this way
           switch (key) {
             case "make":
               value = searchText;
