@@ -38,7 +38,7 @@ export const Register = () => {
             <input value={email} onChange={(e) => setEmail(e.target.value)}type="email" placeholder="youremail@gmail.com" id="email" name="email" />
             <label htmlFor="password">Password</label>
             <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="********" id="password" name="password" />
-            <button type="submit" onClick={()=>{access()}}>Log In</button>
+            <button className="logReg" type="submit" onClick={()=>{access()}}>Log In</button>
         </form>
         <button className="link-btn" onClick={() =>reDirect()}>Already have an account? Login here.</button>
     </div>

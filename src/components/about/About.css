@@ -57,3 +57,16 @@
   margin: 0;
   vertical-align: middle;
 }
+
+.about-text #about-common {
+  margin-top: 40px;
+  font-size: 50px;
+}
+
+/* mobile phones*/
+@media screen and (max-width: 600px) {
+  .about-text #about-common {
+    font-size: 25px;
+    margin-top: 20px;
+  }
+}

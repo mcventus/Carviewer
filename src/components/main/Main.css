@@ -5,3 +5,8 @@
   background-size: cover;
   background-position: center;
 } 
+@media screen and (max-width: 200px) {
+  .main{
+    height: 100%;
+  } 
+}

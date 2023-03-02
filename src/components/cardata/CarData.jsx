@@ -42,7 +42,7 @@ export default function CarData() {
             <h2 style={{ marginBottom: "20px" }}>RESULTS FROM THE SEARCH</h2>
           </div>
           <div>
-            <p>Select and click any car to get detail information.</p>
+            <p style={{fontSize:'14px', marginBottom:'20px'}}>Select and click any car to get detail information.</p>
           </div>
         </div>
         <div className="car-grid">

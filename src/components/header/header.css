@@ -23,26 +23,39 @@ header::after{
   display: table;
   width: 100%;
   padding: 0;
-  background: url(../../../public/imgs/header_img_1920x1280_0_7_opacity.png) center center no-repeat;
-  background-color: #000000;
+  background: url(../../../public/imgs/header_img_1920x1280_0_65_opacity.png) center center no-repeat;
+  background-color: #1e1e1e;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
 }
-/* .header__top:hover{
-  background: url(../../../public/imgs/header_img_1920x1280_0_8_opacity.png) center center no-repeat;
-} */
+.header__top:hover{
+  display: table;
+  width: 100%;
+  padding: 0;
+  color: #fff;
+  background: url(../../../public/imgs/header_img_1920x1280_0_87_opacity.png) center center no-repeat;
+  /* background-color: #676767; */
+  background-color: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  transition: all 0.5s;
+  
+}
 .header__top .header__darker {
   background: rgba(193, 130, 255, 0.1);
 }
 .header__top h1 {
-  color: #d3d3d3;
+  color: #bbbbbb;
   font-size: 90px;
   font-weight: 700;
   text-transform: uppercase;
   margin: 0 auto;
 }
+
 
 .header__top p {
   color: transparent;
@@ -54,7 +67,7 @@ header::after{
   margin-bottom: 60px;
 }
 .header__top p:hover {
-  color: #ffffff;
+  color: #e3fffe;
 }
 header .header__top__text {
   padding-top: 400px;
@@ -68,5 +81,11 @@ header .header__top__text {
     margin-top: 35%;
     font-size: 30px;
     margin-bottom: 60px;
+  }
+  .header__top h1{
+    font-size: 40px;
+  }
+  .header__top p:hover {
+    color: transparent;
   }
 }

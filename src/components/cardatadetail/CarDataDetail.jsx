@@ -1,97 +1,192 @@
-import React from 'react'
+import React from "react";
 // import '../cardata/CarData.css'
-import { useState, useEffect, useContext } from 'react'
-import { useParams, Link } from 'react-router-dom'
-import ShowImage from '../showimages/ShowImage'
-import './CarDataDetail.css'
-import '../about/About.css'
-import carDataArray from '../cardatadetail/cardataimg.json'
-import '../home/Home.css'
-import { cadillac, chevrolet, gmc, hyundai, mercedes, nissan, toyota} from "../specImgs";
+import { useState, useEffect, useContext } from "react";
+import { useParams, Link } from "react-router-dom";
+import ShowImage from "../showimages/ShowImage";
+import "./CarDataDetail.css";
+import "../about/About.css";
+import carDataArray from "../cardatadetail/cardataimg.json";
+import "./CarDataDetail.css";
+import {
+  cadillac_sm, gmc_sm, chevrolet_sm, hyundai_sm, mercedes_sm, nissan_sm, toyota_sm, hummer_sm, chrysler_sm, audi_sm, peugeot_sm, range_rover_sm, volkswagen_sm, volvo_sm, ford_sm, dodge_sm, opel_sm,
+  gmc_lg, cadillac_lg, chevrolet_lg, hyundai_lg, mercedes_lg, nissan_lg, toyota_lg, hummer_lg, chrysler_lg, audi_lg, peugeot_lg, range_rover_lg, volkswagen_lg, volvo_lg, ford_lg, dodge_lg, opel_lg
+} from "../specImgs";
 
 const carImags = [
   {
-    make:'Toyota',
-    image: toyota
+    make: "Toyota",
+    imageSm: toyota_sm,
+    imageLg: toyota_lg,
   },
   {
-    make:'Nissan',
-    image: nissan
+    make: "Nissan",
+    imageSm: nissan_sm,
+    imageLg: nissan_lg,
   },
   {
-    make:'Hyundai',
-    image: hyundai
+    make: "Hyundai",
+    imageSm: hyundai_sm,
+    imageLg: hyundai_lg,
   },
   {
-    make:'Mercedes',
-    image: mercedes
+    make: "Mercedes-Benz",
+    imageSm: mercedes_sm,
+    imageLg: mercedes_lg,
   },
   {
-    make:'Chevrolet',
-    image: chevrolet
+    make: "Chevrolet",
+    imageSm: chevrolet_sm,
+    imageLg: chevrolet_lg,
   },
   {
-    make:'GMC',
-    image: gmc
+    make: "GMC",
+    imageSm: gmc_sm,
+    imageLg: gmc_lg,
   },
   {
-    make:'Cadillac',
-    image: cadillac
-  }
-]
-
-
+    make: "Range Rover",
+    imageSm: range_rover_sm,
+    imageLg: range_rover_lg,
+  },
+  {
+    make: "Peugeot",
+    imageSm: peugeot_sm,
+    imageLg: peugeot_lg,
+  },
+  {
+    make: "Audi",
+    imageSm: audi_sm,
+    imageLg: audi_lg,
+  },
+  {
+    make: "Chrysler",
+    imageSm: chrysler_sm,
+    imageLg: chrysler_lg,
+  },
+  {
+    make: "HUMMER",
+    imageSm: hummer_sm,
+    imageLg: hummer_lg,
+  },
+  {
+    make: "Dodge",
+    imageSm: dodge_sm,
+    iimageLg: dodge_lg,
+  },
+  {
+    make: "Ford",
+    imageSm:ford_sm,
+    imageLg: ford_lg,
+  },
+  {
+    make: "Volvo",
+    imageSm: volvo_sm,
+    imageLg: volvo_lg,
+  },
+  {
+    make: " Volkswagen",
+    imageSm: volkswagen_sm,
+    imageLg: volkswagen_lg,
+  },
+  {
+    make: " Opel",
+    imageSm: opel_sm,
+    imageLg: opel_lg,
+  },
+  {
+    make: " Cadillac",
+    imageSm: cadillac_sm,
+    imageLg: cadillac_lg,
+  },
+];
 
 export default function CarDataDetail() {
-
   const carito = {
-    id: '30930',
-    make: 'toyota',
-    model: 'yaris',
-  }
+    id: "30930",
+    make: "toyota",
+    model: "yaris",
+  };
 
-  const [car, setCar] = useState({})
-  const [carImg, setCarImg] = useState()
+  const [car, setCar] = useState({});
+  const [carImgSm, setCarImgSm] = useState();
+  const [carImgLg, setCarImgLg] = useState();
 
-  const DisplayCarDetail = ({car}) =>{
-    return(
-      <div className="home-item">
-      <div className="hover-bg">
-      {" "}
-          <a href={carImg}>
+  const DisplayCarDetail = ({ car }) => {
+    return (
+      <>
+      <div className="cardata-cont">
+      <div className="detail-item">
+        <div className="hover-bg">
+          {" "}
+          <a href={carImgLg} title={car.make}>
             <div className="hover-text">
-              <table className='displayDetail' style={{width:'auto', textAlign:'left', margin:'0 auto', color:'whitesmoke', marginBottom: '100px'}}>
-                <tr>
-                <td><h2>{'ID  '}</h2></td>
-                <td><h2>{car.id}</h2></td>
-                </tr>
-                <tr>
-                <td><h2>{'YEAR '}</h2></td>
-                <td><h2>{car.year}</h2></td>
-                </tr>
-                <tr>
-                <td><h2>{'MAKE '}</h2></td>
-                <td><h2>{car.make}</h2></td>
-                </tr>
-                <tr>
-                <td><h2>{'MODEL'}</h2></td>
-                <td><h2>{car.model}</h2></td>
-                </tr>
-                <tr>
-                <td><h2>{'TYPE  '}</h2></td>
-                <td><h2>{car.type}</h2></td>
-                </tr>
-              </table>
+              <h4>{car.make}  {" "} {car.model}</h4>
             </div>
-          <img src={carImg} className="flex-img" style={{margin: '0 auto'}}/>
+            <img
+              src={carImgSm}
+              className="flex-img"
+              style={{ margin: "0 auto" }}
+              alt={car.make}
+            />
           </a>{" "}
-          <br/>
+          <br />
+        </div>
       </div>
       </div>
-  )
-  }
+      <div className="car-grid">
+      <div className="cardata-card">
+      <table
+             className="displayDetail"
+           >
+             <tr>
+               <td id="td1">
+                 <h3>{"ID  "}</h3>
+               </td>
+               <td id="td2">
+                 <h3>{car.id}</h3>
+               </td>
+             </tr>
+             <tr>
+               <td>
+                 <h3>{"YEAR "}</h3>
+               </td>
+               <td>
+                 <h3>{car.year}</h3>
+               </td>
+             </tr>
+             <tr>
+               <td>
+                 <h3>{"MAKE "}</h3>
+               </td>
+               <td>
+                 <h3>{car.make}</h3>
+               </td>
+             </tr>
+             <tr>
+               <td>
+                 <h3>{"MODEL"}</h3>
+               </td>
+               <td>
+                 <h3>{car.model}</h3>
+               </td>
+             </tr>
+             <tr>
+               <td>
+                 <h3>{"TYPE  "}</h3>
+               </td>
+               <td>
+                 <h3>{car.type}</h3>
+               </td>
+             </tr>
+           </table>
+</div>
+      </div>
+           
+           </>
+    );
+  };
 
-  let { id } = useParams()
+  let { id } = useParams();
   //const datanumDetail = useContext(CarDataContext)
   function getLocal(key, iniValue) {
     // getting stored value
@@ -102,26 +197,31 @@ export default function CarDataDetail() {
     }
   }
   useEffect(() => {
-    let selectedCar = getLocal('car', carito)
-      carImags.map((c)=>{
-        if(c.make == selectedCar.make){
-            setCarImg(c.image)
-            setCar(selectedCar)
-            console.log('Img car type : '+c.make)
-        }else{
-            console.error("Error!")
-        }
-      })
-     console.log(selectedCar)
-  }, [id])
+    let selectedCar = getLocal("car", carito);
+    carImags.map((c) => {
+      if (c.make == selectedCar.make) {
+        setCarImgSm(c.imageSm);
+        setCarImgLg(c.imageLg);
+        setCar(selectedCar);
+        console.log("Img car type : " + c.make);
+      } else {
+        console.error("Error!");
+      }
+    });
+    console.log(selectedCar);
+  }, [id]);
 
   return car ? (
-      <div>
-        <DisplayCarDetail car={car} id={car.id}/>
-        <button id="back">
-          <Link to="/cardata" id="link-btn">Back</Link>
-        </button>
+    <div>
+      <DisplayCarDetail car={car} id={car.id} />
+      <button id="back">
+        <Link to="/cardata" id="link-btn">
+          Back
+        </Link>
+      </button>
       {/* <Footer /> */}
     </div>
-  ) : <h1>No car detail data found</h1>
+  ) : (
+    <h1>No car detail data found</h1>
+  );
 }

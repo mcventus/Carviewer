@@ -10,7 +10,8 @@ const ShowImage = ({ title, largeImg, smallImg }) => {
           <div className="hover-text">
             <h4>{title}</h4>
           </div>
-          <img src={smallImg} className="flex-img" alt={title} />{" "}
+          {/* <img src={smallImg} className="flex-img" alt={title} />{" "} */}
+          <img src={smallImg} className="flex-img"/>{" "}
         </a>{" "}
       </div>
     </div>

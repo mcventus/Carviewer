@@ -57,11 +57,16 @@
   margin-left: 10px;
   color: white;
 }
+
+#cardata-make-1{
+  color: rgb(255, 255, 255);
+  padding: 0.2rem 0 0rem 0;
+}
 .cardata-card:hover {
-  background-color: rgb(185, 185, 185);
+  background-color: rgb(141, 141, 141);
   /* color: rgb(55, 55, 55); */
   border: none;
-  transform: translateY(-1rem);
+  transform: translateY(-0.2rem);
 }
 .card > img {
   height: 638px;
@@ -102,10 +107,20 @@ input {
   border-radius: 0.7rem;
   cursor: pointer;
   color: #ffffff;
+  margin-bottom: 40px;
 }
 #link-btn:hover {
   border: none;
   /* background: rgb(66, 129, 255); */
   background-image: linear-gradient(to right,rgba(255,0,0,1), rgb(99, 150, 253));
   color: rgb(240, 230, 230);
+}
+@media screen and (max-width: 888px) {
+  /**/
+  .cardata-card-direction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
 }

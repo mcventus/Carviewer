@@ -12,7 +12,7 @@ const About = (props) => {
         <div className="row">
           <div className="col-xs-12 col-md-6">
             <div className="about-text">
-              <h3 style={{marginBottom: '100px', marginTop: '40px', fontSize: '40px'}}>Common cars in the USA</h3>
+              <h3 id="about-common" >Common cars in the USA</h3>
               <div>
                 <div className='container'>
               

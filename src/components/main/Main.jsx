@@ -32,7 +32,7 @@ export default function Main() {
   const [options, setOptions] = useState({
     method: "GET",
     url: `${BASE_URL_DATA}`,
-    params: { limit: "3", page: "1", year: "", make: "", model: "", type: "" },
+    params: { limit: "10", page: "1", year: "", make: "", model: "", type: "" },
     headers: {
       "X-RapidAPI-Key": `${process.env.REACT_APP_CAR_KEY}`,
       "X-RapidAPI-Host": "car-data.p.rapidapi.com",

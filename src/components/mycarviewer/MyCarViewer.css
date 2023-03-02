@@ -12,21 +12,16 @@
   border: 1px solid rgb(232, 232, 232);
   box-shadow: rgba(189, 189, 189, 0.4) 0px 22px 70px 4px;
 }
-@media screen and (min-width: 600px) {
-  .main-form-container {
-    padding: 5rem;
-    /* border: 1px solid white; */
-    border-radius: 10px;
-    margin: 0.5rem;
-  }
+.main-searchBar{
+  position: relative;
+  display: inline-block;
 }
-
-@media screen and (min-width: 350px) {
-  .home-form input {
-    font-size: 10px;
-  }
+.icon {
+  position: absolute;
+  margin-top: 21px;
+  padding: 5px;
+  left: 4px;
 }
-
 label {
   text-align: left;
   padding: 0.25rem 0;
@@ -48,3 +43,19 @@ input {
   color: white;
   text-decoration: underline;
 }
+@media screen and (min-width: 600px) {
+  .main-form-container {
+    padding: 5rem;
+    /* border: 1px solid white; */
+    border-radius: 10px;
+    margin: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 350px) {
+  .home-form input {
+    font-size: 10px;
+  }
+}
+
+

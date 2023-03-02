@@ -36,20 +36,20 @@ nav ul li {
 }
 
 #link-login {
-  color: #4c8003;
+  color: #806203;
   text-decoration: none;
   text-transform: capitalize;
 }
 #link-login:hover {
-  color: #22a900;
+  color: #c89900;
 }
 #link-logout {
-  color: #780000;
+  color: #806203;
   text-decoration: none;
   text-transform: capitalize;
 }
 #link-logout:hover {
-  color: #bc0505;
+  color: #c79800;
 }
 /* creating a pseudo element to bring the dash 
 effect above the nav links when hovering*/

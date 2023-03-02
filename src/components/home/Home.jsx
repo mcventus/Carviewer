@@ -15,7 +15,7 @@ const Home = (props) => {
       <div className="container">
         <div className="section-title">
           <h2>People On The Road</h2>
-          <p>
+          <p id="home-parag">
             On this website, you can find relevant information about cars in USA by typing only the car's maker name.
             The website will then display as primary information car's make, year, and model. If more detail information
             is needed about a specific car, all one has to do is to select the car he or she is interested in and click it.
