@@ -23,21 +23,21 @@ header::after{
   display: table;
   width: 100%;
   padding: 0;
-  background: url(../../../public/imgs/header_img_1920x1280_0_8_opacity.png) center center no-repeat;
+  background: url(../../../public/imgs/header_img_1920x1280_0_7_opacity.png) center center no-repeat;
   background-color: #000000;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
 }
-.header__top:hover{
-  background: url(../../../public/imgs/header_img_1920x1280_0_7_opacity.png) center center no-repeat;
-}
+/* .header__top:hover{
+  background: url(../../../public/imgs/header_img_1920x1280_0_8_opacity.png) center center no-repeat;
+} */
 .header__top .header__darker {
   background: rgba(193, 130, 255, 0.1);
 }
 .header__top h1 {
-  color: #fcfcfc;
+  color: #d3d3d3;
   font-size: 90px;
   font-weight: 700;
   text-transform: uppercase;
@@ -54,7 +54,7 @@ header::after{
   margin-bottom: 60px;
 }
 .header__top p:hover {
-  color: rgb(107, 78, 255);
+  color: #ffffff;
 }
 header .header__top__text {
   padding-top: 400px;

@@ -20,3 +20,22 @@
   border-color: whitesmoke;
   transform: translateY(-1rem);  
 }
+.displayDetail tr td{
+  padding: 10px;
+}
+.hover-bg .hover-text {
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
+  background: linear-gradient(
+    to right,
+    rgba(196, 196, 196, 0.8) 0%,
+    rgba(86, 86, 86, 0.8) 100%
+  );
+  padding: 30% 0 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+}

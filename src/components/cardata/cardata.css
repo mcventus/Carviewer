@@ -92,7 +92,7 @@ input {
   border-radius: 10px;
 }
 #back{
-  padding: 0;
+  padding-top: 20px;
 }
 #link-btn {
   border: none;
