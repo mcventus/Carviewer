@@ -1,16 +1,47 @@
 import React from "react";
-// import '../cardata/CarData.css'
-import { useState, useEffect, useContext } from "react";
+import { useState, useEffect} from "react";
 import { useParams, Link } from "react-router-dom";
-import ShowImage from "../showimages/ShowImage";
 import "./CarDataDetail.css";
 import "../about/About.css";
-import carDataArray from "../cardatadetail/cardataimg.json";
 import "./CarDataDetail.css";
 import {
-  cadillac_sm, gmc_sm, chevrolet_sm, hyundai_sm, mercedes_sm, nissan_sm, toyota_sm, hummer_sm, chrysler_sm, audi_sm, peugeot_sm, range_rover_sm, volkswagen_sm, volvo_sm, ford_sm, dodge_sm, opel_sm,
-  gmc_lg, cadillac_lg, chevrolet_lg, hyundai_lg, mercedes_lg, nissan_lg, toyota_lg, hummer_lg, chrysler_lg, audi_lg, peugeot_lg, range_rover_lg, volkswagen_lg, volvo_lg, ford_lg, dodge_lg, opel_lg
-} from "../specImgs";
+  cadillac_sm,
+  gmc_sm,
+  chevrolet_sm,
+  hyundai_sm,
+  mercedes_sm,
+  nissan_sm,
+  toyota_sm,
+  hummer_sm,
+  chrysler_sm,
+  audi_sm,
+  peugeot_sm,
+  range_rover_sm,
+  volkswagen_sm,
+  volvo_sm,
+  ford_sm,
+  dodge_sm,
+  opel_sm,
+  gmc_lg,
+  cadillac_lg,
+  chevrolet_lg,
+  hyundai_lg,
+  mercedes_lg,
+  nissan_lg,
+  toyota_lg,
+  hummer_lg,
+  chrysler_lg,
+  audi_lg,
+  peugeot_lg,
+  range_rover_lg,
+  volkswagen_lg,
+  volvo_lg,
+  ford_lg,
+  dodge_lg,
+  opel_lg,
+  mini_sm,
+  mini_lg,
+} from "../cardata/specImgs";
 
 const carImags = [
   {
@@ -75,7 +106,7 @@ const carImags = [
   },
   {
     make: "Ford",
-    imageSm:ford_sm,
+    imageSm: ford_sm,
     imageLg: ford_lg,
   },
   {
@@ -98,6 +129,11 @@ const carImags = [
     imageSm: cadillac_sm,
     imageLg: cadillac_lg,
   },
+  {
+    make: " MINI",
+    imageSm: mini_sm,
+    imageLg: mini_lg,
+  },
 ];
 
 export default function CarDataDetail() {
@@ -114,75 +150,74 @@ export default function CarDataDetail() {
   const DisplayCarDetail = ({ car }) => {
     return (
       <>
-      <div className="cardata-cont">
-      <div className="detail-item">
-        <div className="hover-bg">
-          {" "}
-          <a href={carImgLg} title={car.make}>
-            <div className="hover-text">
-              <h4>{car.make}  {" "} {car.model}</h4>
+        <div className="cardata-cont">
+          <div className="detail-item">
+            <div className="hover-bg">
+              {" "}
+              <a href={carImgLg} title={car.make}>
+                <div className="hover-text">
+                  <h4>
+                    {car.make} {car.model}
+                  </h4>
+                </div>
+                <img
+                  src={carImgSm}
+                  className="flex-img"
+                  style={{ margin: "0 auto" }}
+                  alt={car.make}
+                />
+              </a>{" "}
+              <br />
             </div>
-            <img
-              src={carImgSm}
-              className="flex-img"
-              style={{ margin: "0 auto" }}
-              alt={car.make}
-            />
-          </a>{" "}
-          <br />
+          </div>
         </div>
-      </div>
-      </div>
-      <div className="car-grid">
-      <div className="cardata-card">
-      <table
-             className="displayDetail"
-           >
-             <tr>
-               <td id="td1">
-                 <h3>{"ID  "}</h3>
-               </td>
-               <td id="td2">
-                 <h3>{car.id}</h3>
-               </td>
-             </tr>
-             <tr>
-               <td>
-                 <h3>{"YEAR "}</h3>
-               </td>
-               <td>
-                 <h3>{car.year}</h3>
-               </td>
-             </tr>
-             <tr>
-               <td>
-                 <h3>{"MAKE "}</h3>
-               </td>
-               <td>
-                 <h3>{car.make}</h3>
-               </td>
-             </tr>
-             <tr>
-               <td>
-                 <h3>{"MODEL"}</h3>
-               </td>
-               <td>
-                 <h3>{car.model}</h3>
-               </td>
-             </tr>
-             <tr>
-               <td>
-                 <h3>{"TYPE  "}</h3>
-               </td>
-               <td>
-                 <h3>{car.type}</h3>
-               </td>
-             </tr>
-           </table>
-</div>
-      </div>
-           
-           </>
+        <div className="car-grid">
+          <div className="cardata-card">
+            <table className="displayDetail">
+              <tr>
+                <td id="td1">
+                  <h3>{"ID  "}</h3>
+                </td>
+                <td id="td2">
+                  <h3>{car.id}</h3>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h3>{"YEAR "}</h3>
+                </td>
+                <td>
+                  <h3>{car.year}</h3>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h3>{"MAKE "}</h3>
+                </td>
+                <td>
+                  <h3>{car.make}</h3>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h3>{"MODEL"}</h3>
+                </td>
+                <td>
+                  <h3>{car.model}</h3>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h3>{"TYPE  "}</h3>
+                </td>
+                <td>
+                  <h3>{car.type}</h3>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </>
     );
   };
 

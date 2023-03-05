@@ -7,20 +7,24 @@ import { TfiLayoutMenuSeparated } from "react-icons/tfi";
 import { useState, useEffect } from "react";
 
 export default function Nav(props) {
-  //const datanum = useContext(DataContext)
-  //const [isLoggedIn, setisLoggedIn] = useLocalStorage('isLoggedIn', '');
-  // #666878
+ 
   const navigate = useNavigate();
   const [navSize, setnavSize] = useState("10rem");
   const [navColor, setnavColor] = useState("transparent");
   const [navBorderRadius, setnavBorderRadius] = useState("0");
   const [navPadding, setnavPadding] = useState("0");
+  
   const listenScrollEvent = () => {
-    window.scrollY > 10 ? setnavColor("rgba(219, 219, 219, 0.8) 0%") : setnavColor("transparent");
-    window.scrollY > 10 ? setnavSize("5rem") : setnavSize("10rem");
-    window.scrollY > 10 ? setnavBorderRadius("7rem") : setnavBorderRadius("0rem");
-    window.scrollY > 10 ? setnavBorderRadius("1rem") : setnavBorderRadius("0rem");
-    window.scrollY > 10 ? setnavPadding("1rem") : setnavPadding("0rem");
+    window.scrollY > 7 ? setnavColor("#ffffff") : setnavColor("transparent");
+    window.scrollY > 7 ? setnavSize("5rem") : setnavSize("10rem");
+    window.scrollY > 7
+      ? setnavBorderRadius("7rem")
+      : setnavBorderRadius("0rem");
+    window.scrollY > 7
+      ? setnavBorderRadius("1rem")
+      : setnavBorderRadius("0rem");
+    window.scrollY > 7 ? setnavPadding("1rem") : setnavPadding("0rem");
+    window.scrollY > 7 ? setLiColor("#f2bb05") : setLiColor("#806203");
   };
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);
@@ -50,13 +54,13 @@ export default function Nav(props) {
   return (
     <div className="container">
       <nav
-          // style={{
-          //         backgroundColor: navColor,
-          //         height: navSize,
-          //         borderRadius: navBorderRadius,
-          //         padding: navPadding,
-          //         transition: "all 1s"
-          //       }}
+        style={{
+          backgroundColor: navColor,
+          height: navSize,
+          borderRadius: navBorderRadius,
+          padding: navPadding,
+          transition: "all 250s",
+        }}
       >
         <img src={logo32} className="logo"></img>
         <div className="dropdown-menu">

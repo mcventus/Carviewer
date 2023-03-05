@@ -1,5 +1,4 @@
-
-// MOCK 
+// MOCK
 import { useState, useEffect, useContext } from "react";
 import axios from "axios";
 import "./CarData.css";
@@ -19,7 +18,7 @@ export default function CarData(props) {
 
   let navigate = useNavigate();
   const showCarDetail = (car) => {
-    car.make = datanum.options.params.make
+    car.make = datanum.options.params.make;
     localStorage.setItem("car", JSON.stringify(car));
     setShowDetail(true);
     const path = "/cardata/" + car.id;
@@ -27,41 +26,44 @@ export default function CarData(props) {
   };
 
   useEffect(() => {
-        carin.map((car, index)=> {
-          setCarSearched(car)
-          console.log(car)
-        })
-        // searchText = datanum.options.params.make
-        // carin.find((car, index)=> {
-        //   car.make = "toyota"? setCarSearched(car):console.log("No car found!" + car.make)
-        // })
-        // console.log(datanum.options.params.make)
-        // console.log("Xyz: "+car)
+    carin.map((car, index) => {
+      setCarSearched(car);
+      console.log(car);
+    });
+    // searchText = datanum.options.params.make
+    // carin.find((car, index)=> {
+    //   car.make = "toyota"? setCarSearched(car):console.log("No car found!" + car.make)
+    // })
+    // console.log(datanum.options.params.make)
+    // console.log("Xyz: "+car)
   }, []);
 
-    return (
-      <div>
-        <div className="bg-light d-flex justify-content-between">
-          <div>
-            <h2 style={{ marginBottom: "20px" }}>RESULTS FROM THE SEARCH</h2>
-          </div>
-          <div>
-            <p>Select and click any car to get detail information.</p>
-          </div>
+  return (
+    <div>
+      <div className="bg-light d-flex justify-content-between">
+        <div>
+          <h2 style={{ marginBottom: "20px" }}>RESULTS FROM THE SEARCH</h2>
         </div>
-        <div className="car-grid">
-            <div onClick={() => showCarDetail(car)} key={car.id} >
-              <ShowCar make={datanum.options.params.make} year={car.year} model={car.model} />
-            </div>
-        </div>
-        <div id="above-back">
-          <button id="back">
-            <Link to="/mycarviewer" id="link-btn">
-              Back
-            </Link>
-          </button>
+        <div>
+          <p>Select and click any car to get detail information.</p>
         </div>
       </div>
-    );
-  } 
-
+      <div className="car-grid">
+        <div onClick={() => showCarDetail(car)} key={car.id}>
+          <ShowCar
+            make={datanum.options.params.make}
+            year={car.year}
+            model={car.model}
+          />
+        </div>
+      </div>
+      <div id="above-back">
+        <button id="back">
+          <Link to="/mycarviewer" id="link-btn">
+            Back
+          </Link>
+        </button>
+      </div>
+    </div>
+  );
+}

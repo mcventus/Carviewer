@@ -58,7 +58,7 @@
   color: white;
 }
 
-#cardata-make-1{
+#cardata-make-1 {
   color: rgb(255, 255, 255);
   padding: 0.2rem 0 0rem 0;
 }
@@ -96,28 +96,37 @@ input {
   border: none;
   border-radius: 10px;
 }
-#back{
+#back {
   padding-top: 20px;
 }
 #link-btn {
   border: none;
   /* background-color: rgb(99, 150, 253); */
-  background-image: linear-gradient(to right, rgb(99, 150, 253), rgba(255,0,0,1));
+  background-image: linear-gradient(
+    to right,
+    rgb(99, 150, 253),
+    rgba(255, 0, 0, 1)
+  );
   padding: 20px;
   border-radius: 0.7rem;
   cursor: pointer;
   color: #ffffff;
+  margin-top: 15px;
   margin-bottom: 40px;
 }
 #link-btn:hover {
   border: none;
   /* background: rgb(66, 129, 255); */
-  background-image: linear-gradient(to right,rgba(255,0,0,1), rgb(99, 150, 253));
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 1),
+    rgb(99, 150, 253)
+  );
   color: rgb(240, 230, 230);
 }
 @media screen and (max-width: 888px) {
   /**/
-  .cardata-card-direction{
+  .cardata-card-direction {
     display: flex;
     flex-direction: column;
     align-items: center;

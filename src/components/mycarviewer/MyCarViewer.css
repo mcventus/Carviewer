@@ -2,25 +2,17 @@
 .home-form {
   display: flex;
   flex-direction: column;
-}
-.home-form {
-  margin: 0 auto;
   width: 50%;
-  margin-top: 70px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: transparent;
 }
-#searchText {
-  border: 1px solid rgb(232, 232, 232);
-  box-shadow: rgba(189, 189, 189, 0.4) 0px 22px 70px 4px;
-}
-.main-searchBar{
-  position: relative;
-  display: inline-block;
-}
+
 .icon {
   position: absolute;
-  margin-top: 21px;
+  margin-top: 14px;
   padding: 5px;
-  left: 4px;
+  left: 7px;
 }
 label {
   text-align: left;
@@ -35,27 +27,72 @@ input {
   width: 100%;
   text-align: center;
   margin: 0 auto;
-  border: 1px solid blue;
+  margin-bottom: 20px;
+  border: 1px solid rgb(152, 152, 152);
 }
 
+.home-form input {
+  border: 1px solid rgb(228, 228, 228);
+}
 .link-btn {
   background: none;
   color: white;
   text-decoration: underline;
 }
-@media screen and (min-width: 600px) {
-  .main-form-container {
-    padding: 5rem;
-    /* border: 1px solid white; */
-    border-radius: 10px;
-    margin: 0.5rem;
-  }
+.previous-view {
+  margin: 0 auto;
 }
 
-@media screen and (min-width: 350px) {
-  .home-form input {
-    font-size: 10px;
-  }
+.search-bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
-
+.search-bar > .i {
+  margin-top: 7px;
+  font-size: 17px;
+}
+.search-bar > input {
+  flex: 1;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding-left: 10px;
+}
+.search-bar input {
+  font-size: 11px;
+  border: 1px solid rgb(228, 228, 228);
+}
+#link-button {
+  width: 100px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 0.7rem;
+  cursor: pointer;
+  color: #ffffff;
+  background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(204, 78, 78));
+}
+#link-button:hover {
+  background-image: linear-gradient(to right, rgb(255, 81, 81), rgb(162, 0, 0));
+}
+@media screen and (max-width: 1100px) {
+  .main-home-container,
+  .home-form {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main-home-container,
+  .home-form {
+    width: 100%;
+  }
+  @media screen and (max-width: 270px) {
+    .main-home-container,
+    .home-form {
+      width: 100%;
+      padding: 0.4rem;
+    }
+  }
+}

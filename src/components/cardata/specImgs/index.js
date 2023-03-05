@@ -33,10 +33,12 @@ import hummer_lg from './hummer_lg.jpg'
 import hummer_sm from './hummer_sm.jpeg'
 import opel_sm from './opel_sm.jpeg'
 import opel_lg from './opel_lg.jpeg'
+import mini_sm from './mini_sm.webp'
+import mini_lg from './mini_lg.jpg'
 
 
 
 export {
-    cadillac_sm, gmc_sm, chevrolet_sm, hyundai_sm, mercedes_sm, nissan_sm, toyota_sm, hummer_sm, chrysler_sm, audi_sm, peugeot_sm, range_rover_sm, volkswagen_sm, volvo_sm, ford_sm, dodge_sm, opel_sm,
-    gmc_lg, cadillac_lg, chevrolet_lg, hyundai_lg, mercedes_lg, nissan_lg, toyota_lg, hummer_lg, chrysler_lg, audi_lg, peugeot_lg, range_rover_lg, volkswagen_lg, volvo_lg, ford_lg, dodge_lg, opel_lg
+    cadillac_sm, gmc_sm, chevrolet_sm, hyundai_sm, mercedes_sm, nissan_sm, toyota_sm, hummer_sm, chrysler_sm, audi_sm, peugeot_sm, range_rover_sm, volkswagen_sm, volvo_sm, ford_sm, dodge_sm, opel_sm, mini_sm,
+    gmc_lg, cadillac_lg, chevrolet_lg, hyundai_lg, mercedes_lg, nissan_lg, toyota_lg, hummer_lg, chrysler_lg, audi_lg, peugeot_lg, range_rover_lg, volkswagen_lg, volvo_lg, ford_lg, dodge_lg, opel_lg, mini_lg
 };

@@ -6,6 +6,12 @@
   justify-content: center;
   color: #a1a1a1;
   background-color: rgb(244, 244, 244);
+  overflow-x: hidden;
+}
+.App-header{
+  position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;
 }
 * {
   margin: 0;
@@ -37,12 +43,12 @@ button {
   padding: 20px;
   border-radius: 10px;
   cursor: pointer;
-  color: #54db39;
+  color: #a0a0a0;
 }
 button:hover {
   border: transparent;
   background-color: white;
-  color: #db4139;
+  color: #5b5b5b;
 }
 .link-btn {
   background: none;
@@ -194,16 +200,15 @@ button:hover {
     width: 50%;
   }
 }
-@media screen and (max-width: 350px) {
-  button{
-    font-size: 10px;;
-  }
-}
 
 @media screen and (max-width: 400px) {
-  
   #about,
   #home {
     width: 110%;
+  }
+}
+@media screen and (max-width: 350px) {
+  button{
+    font-size: 10px;;
   }
 }

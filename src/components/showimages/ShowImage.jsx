@@ -1,5 +1,5 @@
 import React from "react";
-import '../home/Home.css'
+import "../home/Home.css";
 
 const ShowImage = ({ title, largeImg, smallImg }) => {
   return (
@@ -11,7 +11,7 @@ const ShowImage = ({ title, largeImg, smallImg }) => {
             <h4>{title}</h4>
           </div>
           {/* <img src={smallImg} className="flex-img" alt={title} />{" "} */}
-          <img src={smallImg} className="flex-img"/>{" "}
+          <img src={smallImg} className="flex-img" />{" "}
         </a>{" "}
       </div>
     </div>

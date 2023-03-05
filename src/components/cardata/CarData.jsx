@@ -4,17 +4,21 @@ import axios from "axios";
 import "./CarData.css";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import CarDataDetail from "../cardatadetail/CarDataDetail";
-import carin from "./mock_data.json";
 import ShowCar from "./ShowCar";
+import { useLocal } from "../../useLocal";
 
 export default function CarData() {
   const [carData, setCarData] = useState([]);
   const [showDetail, setShowDetail] = useState(false);
-  //const [carImg, setCarImg] = useState({})
+  const [selections, setSelections] = useLocal("selections", "");
 
   let navigate = useNavigate();
   const showCarDetail = (car) => {
+    localStorage.removeItem("car");
     localStorage.setItem("car", JSON.stringify(car));
+    localStorage.removeItem("selections");
+    localStorage.setItem("selections", JSON.stringify(car));
+    console.log("Previuosly viewed: " + selections.make);
     setShowDetail(true);
     const path = "/cardata/" + car.id;
     navigate(path, { replace: false });
@@ -24,12 +28,15 @@ export default function CarData() {
 
   useEffect(() => {
     const getCarData = async () => {
-      axios.request(datanumcar.options).then(function (response) {
-        setCarData(response.data)
-        console.log(response.data)
-      }).catch(function (error) {
-        console.error(error);
-      });
+      axios
+        .request(datanumcar.options)
+        .then(function (response) {
+          setCarData(response.data);
+          console.log(response.data);
+        })
+        .catch(function (error) {
+          console.error(error);
+        });
     };
     getCarData();
   }, []);
@@ -42,7 +49,9 @@ export default function CarData() {
             <h2 style={{ marginBottom: "20px" }}>RESULTS FROM THE SEARCH</h2>
           </div>
           <div>
-            <p style={{fontSize:'14px', marginBottom:'20px'}}>Select and click any car to get detail information.</p>
+            <p style={{ fontSize: "14px", marginBottom: "20px" }}>
+              Select and click any car to get detail information.
+            </p>
           </div>
         </div>
         <div className="car-grid">

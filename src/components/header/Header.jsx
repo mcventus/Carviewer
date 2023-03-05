@@ -1,5 +1,5 @@
 import React from "react";
-import './Header.css'
+import "./Header.css";
 
 const Header = () => {
   return (
@@ -9,10 +9,12 @@ const Header = () => {
           <div className="container">
             <div className="row">
               <div className="col-md-8 col-md-offset-2 header__top__text">
-                <h1>
-                    CarViewer
-                </h1>
-                <p>Use this website to search for cars all over the USA. What is more, the site will give detail information about the car of your selection.</p>
+                <h1>CarViewer</h1>
+                <p>
+                  Use this website to search for cars all over the USA. What is
+                  more, the site will give detail information any car you are
+                  interested in.
+                </p>
               </div>
             </div>
           </div>
@@ -21,4 +23,4 @@ const Header = () => {
     </header>
   );
 };
-export default Header
+export default Header;

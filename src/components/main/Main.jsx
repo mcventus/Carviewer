@@ -32,15 +32,14 @@ export default function Main() {
   const [options, setOptions] = useState({
     method: "GET",
     url: `${BASE_URL_DATA}`,
-    params: { limit: "10", page: "1", year: "", make: "", model: "", type: "" },
+    params: { limit: "1", page: "1", year: "", make: "", model: "", type: "" },
     headers: {
       "X-RapidAPI-Key": `${process.env.REACT_APP_CAR_KEY}`,
       "X-RapidAPI-Host": "car-data.p.rapidapi.com",
     },
   });
-  //const isLoggedIn = getStorageValue('isLoggedIn', '')
-  const [isLoggedIn, setisLoggedIn] = useState(null);
-  //const [isLoggedIn, setisLoggedIn] = useLocalStorage('isLoggedIn', '');
+
+  const [isLoggedIn, setisLoggedIn] = useState(false);
 
   return (
     <div className="main">
@@ -74,10 +73,7 @@ export default function Main() {
               }
             />
             <Route path="/cardata" element={<CarData />} />
-            <Route
-              path="/cardata/:id"
-              element={<CarDataDetail />}
-            />
+            <Route path="/cardata/:id" element={<CarDataDetail />} />
             <Route path="/nodata" element={<NoData />} />
           </Routes>
         </DataContext.Provider>
