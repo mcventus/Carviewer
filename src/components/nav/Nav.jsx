@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import "./Nav.css";
 import logo32 from "../../logo/logo115x32_1.png";
 import "../main/Main.css";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { TfiLayoutMenuSeparated } from "react-icons/tfi";
 import { useState, useEffect } from "react";
 
@@ -109,27 +109,24 @@ export default function Nav(props) {
                 }
               {props.isLoggedIn ? (
                 <li>
-                  <Link
+                  <NavLink
                     onClick={() => {
                       props.setisLoggedIn(false);
                     }}
-                    to="/login"
+                    to="/"
                     id="link-logout"
                   >
                   Logout
-                  </Link>
+                  </NavLink>
                 </li>
               ) : (
                 <li>
-                  <Link
-                    onClick={() => {
-                      props.setisLoggedIn(true);
-                    }}
-                    to="/mycarviewer"
+                  <NavLink
+                    to="/login"
                     id="link-login"
                   >
                     LogIn
-                  </Link>
+                  </NavLink>
                 </li>
               )}
             </ul>

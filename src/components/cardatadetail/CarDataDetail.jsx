@@ -233,7 +233,7 @@ export default function CarDataDetail() {
   useEffect(() => {
     let selectedCar = getLocal("car", carito);
     carImags.map((c) => {
-      if (c.make == selectedCar.make) {
+      if (c.make === selectedCar.make) {
         setCarImgSm(c.imageSm);
         setCarImgLg(c.imageLg);
         setCar(selectedCar);

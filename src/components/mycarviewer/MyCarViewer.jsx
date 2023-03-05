@@ -5,6 +5,7 @@ import { CarDataContext } from "../../CarDataContext";
 import { useNavigate, Link } from "react-router-dom";
 import ShowCar from "../cardata/ShowCar";
 
+
 export default function MyCarViewer() {
   const [searchCar, setSearchCar] = useState("");
   const [limit, setLimit] = useState("");
@@ -72,12 +73,17 @@ export default function MyCarViewer() {
   return (
     <div className="main-home-container">
       <div className="previous-view">
-        <ShowCar
+        {preViewedCar.year ? (<ShowCar
           prev={"PREVIOUSLY VIEWED"}
           make={preViewedCar.make}
           year={preViewedCar.year}
           model={preViewedCar.model}
-        />
+        />):(<ShowCar
+          prev={"DEFAULT"}
+          make={"Toyota"}
+          year={"2023"}
+          model={"Yaris"}
+        />)}
       </div>
       <form className="home-form" onSubmit={handleSubmit}>
         <input

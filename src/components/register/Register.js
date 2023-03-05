@@ -224,7 +224,7 @@ export const Register = () => {
     isClicked && valid ? setValidVisibility() : setInvalidVisibility();
 
   const setIsClicked = (length) => {
-    if (length != 0) {
+    if (length !== 0) {
       isClicked = true;
     } else {
       isClicked = false;
