@@ -7,13 +7,13 @@ const About = (props) => {
     <div>
       <Header />
       <div id="about">
-        <div className="container">
+        <div className="about-container">
           <div className="row">
             <div className="col-xs-12 col-md-6">
               <div className="about-text">
-                <h3 id="about-common">Common cars in the USA</h3>
+                <div className="abt-com"><h3 id="about-common">Common cars in the USA</h3></div>
                 <div>
-                  <div className="container">
+                  <div className="about-container">
                     <div className="row">
                       <div className="col">
                         <ul id="list_cars">

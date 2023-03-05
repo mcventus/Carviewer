@@ -15,7 +15,14 @@ export default function MyCarViewer() {
   useEffect(() => {
     const savedSelections = localStorage.getItem("selections");
     const previousView = JSON.parse(savedSelections);
-    setprevedCar(previousView);
+    previousView ? setprevedCar(previousView) : setprevedCar({
+      prev: "DEFAULT",
+      make: "Toyota",
+      year: "2023",
+      model: "Yaris"
+      }
+    );
+    
   }, []);
 
   const handleChangeLimit = (e) => {
@@ -73,17 +80,12 @@ export default function MyCarViewer() {
   return (
     <div className="main-home-container">
       <div className="previous-view">
-        {preViewedCar.year ? (<ShowCar
+        <ShowCar
           prev={"PREVIOUSLY VIEWED"}
           make={preViewedCar.make}
           year={preViewedCar.year}
           model={preViewedCar.model}
-        />):(<ShowCar
-          prev={"DEFAULT"}
-          make={"Toyota"}
-          year={"2023"}
-          model={"Yaris"}
-        />)}
+        />
       </div>
       <form className="home-form" onSubmit={handleSubmit}>
         <input

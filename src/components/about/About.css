@@ -27,6 +27,12 @@
   font-size: 50px;
 }
 
+
+.about-container {
+  width: 100%;
+  margin: 0 3px;
+}
+
 /* mobile phones*/
 @media screen and (max-width: 600px) {
   .about-text #about-common {
@@ -35,3 +41,50 @@
     margin-top: 20px;
   }
 }
+
+@media (min-width: 768px) {
+  .about-container {
+    width: 750px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .about-container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .about-container {
+    width: 1170px;
+  }
+}
+@media screen and (max-width: 400px){
+  .about-container {
+    width: 270px;
+    margin: 0 auto;
+    margin-left: 12px;
+  }
+  .abt-com{
+    margin-left: 40px;
+  }
+ 
+}
+@media screen and (max-width: 300px) {
+  .about-container {
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 270px) {
+  .about-container {
+    width: 170px;
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 220px) {
+  .about-container {
+    width: 170px;
+    margin-left: 0px;
+  }
+}
+

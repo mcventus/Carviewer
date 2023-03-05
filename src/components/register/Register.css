@@ -45,8 +45,8 @@ label {
     padding: 4rem;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 0.7rem;
-    margin: 0.5rem;
-    width: 100%;
+    margin: 0 auto;
+    width: 400px; 
   }
   button {
     margin: 0 auto;
@@ -64,13 +64,13 @@ label {
     font-size: 12px;
   }
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 420px) {
   #form__container {
     padding: 0rem;
     border: 1px solid white;
     border-radius: 0.7rem;
-    margin: 0.5rem;
-    width: 100%;
+    margin: 0 auto;
+    width: 200px; 
   }
   .login-form,
   .register-form,
