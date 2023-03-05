@@ -139,6 +139,9 @@
     border-top: 0.1rem solid #5d5d5d;
     border: none;
   }
+  .hover-bg .hover-text {
+    padding: 7% 0 7% 0;
+  }
 }
 
 @media screen and (max-width: 350px) {

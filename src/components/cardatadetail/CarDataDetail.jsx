@@ -154,14 +154,14 @@ export default function CarDataDetail() {
           <div className="detail-item">
             <div className="hover-bg">
               {" "}
-              <a href={carImgLg} title={car.make}>
+              <a title={car.make}>
                 <div className="hover-text">
                   <h4>
                     {car.make} 
                   </h4>
                 </div>
                 <img
-                  src={carImgSm}
+                  src={carImgLg}
                   className="flex-img"
                   style={{ margin: "0 auto" }}
                   alt={car.make}

@@ -112,6 +112,7 @@ Smooth implementation of functions and calling them at runtime
 ## NOTICE 
 - External Libraries, APIS, and other resources used to complete this react project.
 - All MVP and STRETCHED GOALS implemented tested and are visible in the screenshots.
+- The website is completely responsive to any screen size.
 
 ## Report Format Example
 - Taken from the Teacher's repository. 
