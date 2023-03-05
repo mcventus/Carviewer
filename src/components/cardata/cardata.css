@@ -60,7 +60,7 @@
 
 #cardata-make-1 {
   color: rgb(255, 255, 255);
-  padding: 0.2rem 0 0rem 0;
+  padding: 0.2rem 0 0.5rem 0;
 }
 .cardata-card:hover {
   background-color: rgb(141, 141, 141);

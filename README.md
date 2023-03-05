@@ -32,7 +32,7 @@ Using can viwer you can search for the car you are interested in and view the ca
 - if the user clicks on one of the listed vehicle data then the user must be able to view detailed information about the vehicle or car 
 - All the above happens on the main component and when user wants to go to listing component, there must be a button to click to go back 
 
-## Additional Requirements
+## STRETCHED GOALS
 
 - there will be a register and login components available for the user
 - when user login and search for car data his search history could be saved to be available when user login another time
@@ -50,7 +50,7 @@ Using can viwer you can search for the car you are interested in and view the ca
 |Feb 24| Brainstorming / Writing Pseudocodes / Identifying All Constraints | Yes
 |Feb 24-25| Setting up project components/ Testing if each components are functioning with out error | Yes
 |Feb 26-27| Implementing major functions and use react cross-component communicators or built in functions to save application data states and control life cycle of project components  | yes
-|Feb 28| Finising up the application, testing and deploying  | No
+|Feb 28| Finising up the application, testing and deploying  | Yes
 
 
 
@@ -64,6 +64,7 @@ Using can viwer you can search for the car you are interested in and view the ca
 ## Problems and Solutions 
 
 - Difficult to find good car API that provides both text and image data 
+- Managed to find a good API but no images. I had to produce my own for every car.
 
 ## Code Snippet
 
@@ -72,42 +73,30 @@ Smooth implementation of functions and calling them at runtime
 
 ```
   const datanum = useContext(CarDataContext);
-  const [searchText, setSearchText] = useState("");
   const navigate = useNavigate();
 
   const setOptionsParam = () => {
     Object.entries(datanum.options).map(([key, value]) => {
       if (key === "params") {
         Object.entries(datanum.options.params).map(([key, value]) => {
-          switch (key) {
-            case "make":
-              value = searchText;
-              datanum.options.params.make = value;
-              datanum.setOptions({ ...datanum.options });
-              break;
-            case "model":
-              value = searchText;
-              datanum.options.params.model = value;
-              datanum.setOptions({ ...datanum.options });
-              break;
-            case "type":
-              value = searchText;
-              datanum.options.params.type = value;
-              datanum.setOptions({ ...datanum.options });
-              break;
-            case "id":
-              value = searchText;
-              datanum.options.params.id = value;
-              datanum.setOptions({ ...datanum.options });
-              break;
-            case "year":
-              value = searchText;
-              datanum.options.params.year = value;
-              datanum.setOptions({ ...datanum.options });
+          if (key === "limit") {
+            value = limit;
+            datanum.options.params.limit = value;
+          }
+
+          if (key === "page") {
+            value = page;
+            datanum.options.params.page = value;
+          }
+
+          if (key === "make") {
+            value = searchCar;
+            datanum.options.params.make = value;
           }
         });
       }
     });
+    console.log("setOptionsParam() ends.");
   };
 
 ```
@@ -118,10 +107,11 @@ Smooth implementation of functions and calling them at runtime
 
 
 ## Change Log
-- ... no changes yet ...
+- A number of stretched goals such as showing logged in user name and status, previously viewed cars info and large size car images display were added and implemented.
 
 ## NOTICE 
 - External Libraries, APIS, and other resources used to complete this react project.
+- All MVP and STRETCHED GOALS implemented tested and are visible in the screenshots.
 
 ## Report Format Example
 - Taken from the Teacher's repository. 

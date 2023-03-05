@@ -18,7 +18,6 @@ export default function CarData() {
     localStorage.setItem("car", JSON.stringify(car));
     localStorage.removeItem("selections");
     localStorage.setItem("selections", JSON.stringify(car));
-    console.log("Previuosly viewed: " + selections.make);
     setShowDetail(true);
     const path = "/cardata/" + car.id;
     navigate(path, { replace: false });

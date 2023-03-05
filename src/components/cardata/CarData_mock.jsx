@@ -1,19 +1,15 @@
 // MOCK
 import { useState, useEffect, useContext } from "react";
-import axios from "axios";
 import "./CarData.css";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import CarDataDetail from "../cardatadetail/CarDataDetail";
 import carin from "./mock_data.json";
 import ShowCar from "./ShowCar";
 import { CarDataContext } from "../../CarDataContext";
-// import carImg from '../../components/cardata/spec-imgs/cadillac_500x750.png'
 
 export default function CarData(props) {
-  //const [carData, setCarData] = useState([]);
+
   const [car, setCarSearched] = useState([]);
   const [showDetail, setShowDetail] = useState(false);
-  //const [carImg, setCarImg] = useState({})
   const datanum = useContext(CarDataContext);
 
   let navigate = useNavigate();
@@ -30,12 +26,6 @@ export default function CarData(props) {
       setCarSearched(car);
       console.log(car);
     });
-    // searchText = datanum.options.params.make
-    // carin.find((car, index)=> {
-    //   car.make = "toyota"? setCarSearched(car):console.log("No car found!" + car.make)
-    // })
-    // console.log(datanum.options.params.make)
-    // console.log("Xyz: "+car)
   }, []);
 
   return (

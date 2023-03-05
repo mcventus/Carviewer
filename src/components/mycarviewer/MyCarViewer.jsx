@@ -13,18 +13,15 @@ export default function MyCarViewer() {
 
   useEffect(() => {
     const savedSelections = localStorage.getItem("selections");
-    console.log(savedSelections);
     const previousView = JSON.parse(savedSelections);
     setprevedCar(previousView);
   }, []);
 
   const handleChangeLimit = (e) => {
     setLimit(e.target.value);
-    console.log("limit " + limit);
   };
   const handleChangePage = (e) => {
     setPage(e.target.value);
-    console.log("page " + page);
   };
 
   const datanum = useContext(CarDataContext);
@@ -37,20 +34,16 @@ export default function MyCarViewer() {
           if (key === "limit") {
             value = limit;
             datanum.options.params.limit = value;
-            console.log(datanum.options.params.limit);
           }
 
           if (key === "page") {
             value = page;
             datanum.options.params.page = value;
-            console.log(datanum.options.params.page);
           }
 
           if (key === "make") {
             value = searchCar;
-            console.log(searchCar);
             datanum.options.params.make = value;
-            console.log("search text " + datanum.options.params.make);
           }
         });
       }
@@ -59,7 +52,6 @@ export default function MyCarViewer() {
   };
 
   const handleSubmit = (e) => {
-    console.log("submit" + datanum.options.params.make);
     e.preventDefault();
     return (
       <div className="main-home-container">
@@ -71,7 +63,6 @@ export default function MyCarViewer() {
   };
 
   const handleKeyDown = (e) => {
-    console.log("search text is " + searchCar);
     if (e.key === "Enter") {
       setOptionsParam();
       handleSubmit(e);

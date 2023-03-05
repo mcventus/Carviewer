@@ -17,6 +17,10 @@ nav {
 .logo {
   padding-left: 10px;
 }
+#loggedin-user{
+  color: #594400;
+  
+}
 .dropdown-btn {
   display: none;
 }
@@ -24,6 +28,7 @@ nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
+  height: fit-content;
 }
 nav ul li {
   display: inline-block;
@@ -89,7 +94,7 @@ effect above the nav links when hovering*/
     background-color: #282c34;
     width: 0px;
     margin-top: 15px;
-    height: 7rem;
+    height: 8rem;
     transition: all 0.3s ease-in;
     overflow: hidden;
   }

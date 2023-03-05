@@ -9,14 +9,17 @@ import { useState, useEffect } from "react";
 export default function Nav(props) {
  
   const navigate = useNavigate();
-  const [navSize, setnavSize] = useState("10rem");
+  const [navSize, setnavSize] = useState("7rem");
   const [navColor, setnavColor] = useState("transparent");
   const [navBorderRadius, setnavBorderRadius] = useState("0");
   const [navPadding, setnavPadding] = useState("0");
+
+  //logged in user
+  const [loggedinName, setLoggedinName] = useState("");
   
   const listenScrollEvent = () => {
     window.scrollY > 7 ? setnavColor("#ffffff") : setnavColor("transparent");
-    window.scrollY > 7 ? setnavSize("5rem") : setnavSize("10rem");
+    window.scrollY > 7 ? setnavSize("5rem") : setnavSize("7rem");
     window.scrollY > 7
       ? setnavBorderRadius("7rem")
       : setnavBorderRadius("0rem");
@@ -24,14 +27,20 @@ export default function Nav(props) {
       ? setnavBorderRadius("1rem")
       : setnavBorderRadius("0rem");
     window.scrollY > 7 ? setnavPadding("1rem") : setnavPadding("0rem");
-    window.scrollY > 7 ? setLiColor("#f2bb05") : setLiColor("#806203");
   };
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);
     return () => {
       window.removeEventListener("scroll", listenScrollEvent);
     };
+  
   }, []);
+
+  useEffect(()=>{
+    const namify = localStorage.getItem("name")
+    const nameStored = JSON.parse(namify)
+    setLoggedinName(nameStored)
+  }, [loggedinName])
 
   const logIn = () => {
     props.setisLoggedIn(true);
@@ -47,6 +56,9 @@ export default function Nav(props) {
     navigate(path, { replace: true });
   };
 
+  const namify = localStorage.getItem("name")
+  const nameStored = JSON.parse(namify)
+
   const [viewNavbar, setViewNavbar] = useState(false);
   const handleViewNavbar = () => {
     setViewNavbar(!viewNavbar);
@@ -59,7 +71,7 @@ export default function Nav(props) {
           height: navSize,
           borderRadius: navBorderRadius,
           padding: navPadding,
-          transition: "all 250s",
+          transition: "all 1s"
         }}
       >
         <img src={logo32} className="logo"></img>
@@ -84,6 +96,17 @@ export default function Nav(props) {
                   MyCarViewer
                 </NavLink>
               </li>
+             
+              {props.isLoggedIn ? (
+                 <li>
+                <NavLink id="link" >
+                
+                <div id="loggedin-user">{loggedinName}</div>
+                  </NavLink>
+                  </li>
+              ):("")
+                  
+                }
               {props.isLoggedIn ? (
                 <li>
                   <Link
@@ -93,7 +116,7 @@ export default function Nav(props) {
                     to="/login"
                     id="link-logout"
                   >
-                    Logout
+                  Logout
                   </Link>
                 </li>
               ) : (

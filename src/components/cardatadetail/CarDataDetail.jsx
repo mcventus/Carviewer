@@ -157,7 +157,7 @@ export default function CarDataDetail() {
               <a href={carImgLg} title={car.make}>
                 <div className="hover-text">
                   <h4>
-                    {car.make} {car.model}
+                    {car.make} 
                   </h4>
                 </div>
                 <img
@@ -173,7 +173,7 @@ export default function CarDataDetail() {
         </div>
         <div className="car-grid">
           <div className="cardata-card">
-            <table className="displayDetail">
+            <table className="display-detail">
               <tr>
                 <td id="td1">
                   <h3>{"ID  "}</h3>
@@ -222,7 +222,6 @@ export default function CarDataDetail() {
   };
 
   let { id } = useParams();
-  //const datanumDetail = useContext(CarDataContext)
   function getLocal(key, iniValue) {
     // getting stored value
     if (typeof window !== "undefined") {
@@ -238,7 +237,6 @@ export default function CarDataDetail() {
         setCarImgSm(c.imageSm);
         setCarImgLg(c.imageLg);
         setCar(selectedCar);
-        console.log("Img car type : " + c.make);
       } else {
         console.error("Error!");
       }
