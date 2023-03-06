@@ -32,7 +32,7 @@ Using can viwer you can search for the car you are interested in and view the ca
 - if the user clicks on one of the listed vehicle data then the user must be able to view detailed information about the vehicle or car 
 - All the above happens on the main component and when user wants to go to listing component, there must be a button to click to go back 
 
-## STRETCHED GOALS
+## STRETCH GOALS
 
 - there will be a register and login components available for the user
 - when user login and search for car data his search history could be saved to be available when user login another time
@@ -107,11 +107,11 @@ Smooth implementation of functions and calling them at runtime
 
 
 ## Change Log
-- A number of stretched goals such as showing logged in user name and status, previously viewed cars info and large size car images display were added and implemented.
+- A number of stretch goals such as showing logged in user name and status, previously viewed cars info and large size car images display were added and implemented.
 
 ## NOTICE 
 - External Libraries, APIS, and other resources used to complete this react project.
-- All MVP and STRETCHED GOALS implemented tested and are visible in the screenshots.
+- All MVP and STRETCH GOALS implemented tested and are visible in the screenshots.
 - The website is completely responsive to any screen size.
 
 ## Report Format Example
