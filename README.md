@@ -39,7 +39,6 @@ Using can viwer you can search for the car you are interested in and view the ca
 
 - there will be a register and login components available for the user
 - when user login and search for car data his search history could be saved to be available when user login another time
-- background music must play to make the game interesting
 
 ## Wireframe: Priority Matrix
    
