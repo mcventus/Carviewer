@@ -7,8 +7,11 @@ CarViewer: Project II
 
 Using can viwer you can search for the car you are interested in and view the cars specifications together with other extra relevant details.
 
+## SURGE DEPLOYMENT LINK
+- https://carviewer.surge.sh/
+
 ## Trello
-   https://trello.com/invite/b/b2lv92Wu/ATTI7f904cde7e0fd585c3f8d56ca902df64E0CF6E4C/carviewer
+- https://trello.com/invite/b/b2lv92Wu/ATTI7f904cde7e0fd585c3f8d56ca902df64E0CF6E4C/carviewer
 
 ## Figma
 
